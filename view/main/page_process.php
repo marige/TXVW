@@ -457,7 +457,7 @@
     $(document).on('ready', function () {
           $( "#btnreadygo" ).click(function() {
              
-           window.location.replace("https://vw.izichange.com/page_destination.html");
+           window.location.replace("https://vw.izichange.com/main/pu_destination");
                 });
       // initialization of carousel
       $.HSCore.components.HSCarousel.init('.js-carousel');

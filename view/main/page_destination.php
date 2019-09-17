@@ -220,38 +220,7 @@
               </select>
               
             </li>
-            <!-- SLIDE  -->
-            <li data-index="rs-11" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeOut" data-easeout="Power4.easeOut" data-masterspeed="default" data-thumb="http://works.themepunch.com/revolution_5_3/wp-content/" data-rotate="0" data-saveperformance="off" data-title="Example Two" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-              <!-- MAIN IMAGE -->
-              <img src="assets/img/transparent.png" data-bgcolor="#ffffff"  style='background:#ffffff' alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-              <!-- LAYERS -->
-
-              <!-- LAYER NR. 5 -->
-              <div class="tp-caption  "
-                   id="slide-11-layer-4"
-                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                   data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
-                   data-width="full-proportional"
-                   data-height="full-proportional"
-                   data-whitespace="nowrap"
-
-                   data-type="image"
-                   data-basealign="slide"
-                   data-responsive_offset="off"
-                   data-wrapper_class="tp-nopointer"
-                   data-responsive="off"
-                   data-frames='[{"delay":600,"speed":1500,"frame":"0","from":"sX:1;sY:1;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
-                   data-textAlign="['inherit','inherit','inherit','inherit']"
-                   data-paddingtop="[0,0,0,0]"
-                   data-paddingright="[0,0,0,0]"
-                   data-paddingbottom="[0,0,0,0]"
-                   data-paddingleft="[0,0,0,0]"
-                   data-blendmode="screen"
-
-                   style="z-index: 5;">
-                <img src="assets/img/imagegallery7.jpg" alt="Image description" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1280">
-              </div>
-
+           
               <!-- LAYER NR. 6 -->
               <div class="tp-caption   tp-resizeme"
                    id="slide-11-layer-6"
@@ -300,28 +269,6 @@
                    style="z-index: 7; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 700; color: rgba(255,255,255,0.85);font-family:Poppins;letter-spacing:10px;">EASY AND SMARTER!!!
               </div>
 
-              <!-- LAYER NR. 8 -->
-              <a class="tp-caption rev-btn  tp-resizeme" href="https://revolution.themepunch.com/direct-customer-benefits/" target="_blank" id="slide-11-layer-10"
-                 data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                 data-y="['middle','middle','middle','middle']" data-voffset="['70','40','60','60']"
-                 data-width="none"
-                 data-height="none"
-                 data-whitespace="nowrap"
-
-                 data-type="button"
-                 data-actions=""
-                 data-responsive_offset="on"
-
-                 data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"y:-20px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bg:rgba(0,0,0,1);bs:solid;bw:0 0 0 0;"}]'
-                 data-textAlign="['inherit','inherit','inherit','inherit']"
-                 data-paddingtop="[0,0,0,0]"
-                 data-paddingright="[35,35,35,35]"
-                 data-paddingbottom="[0,0,0,0]"
-                 data-paddingleft="[35,35,35,35]"
-                 data-blendmode="exclusion"
-
-                 style="z-index: 8; white-space: nowrap; font-size: 15px; line-height: 50px; font-weight: 700; color: rgba(0,0,0,1);font-family:Poppins;background-color:rgba(255,255,255,0.85);border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;">GET STARTED NOW
-              </a>
             </li>
           
           </ul>
@@ -575,7 +522,7 @@
     $(document).on('ready', function () {
           $( "#slide-10-layer-10" ).change(function() {
              
-           window.location.replace("https://vw.izichange.com/page_ok.html");
+           window.location.replace("https://vw.izichange.com/main/pu_country");
                 });
       // initialization of carousel
       $.HSCore.components.HSCarousel.init('.js-carousel');
