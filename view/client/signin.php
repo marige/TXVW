@@ -11,13 +11,13 @@
         <main>
             
             <!-- Header -->
-            <header id="js-header" class="u-header u-header--static u-header--floating g-mt-40--lg" data-header-fix-moment-classes="u-shadow-v18 g-bg-teal">
+            <header id="js-header" class="u-header u-header--static u-header--floating g-mt-40--lg" data-header-fix-moment-classes="u-shadow-v18 g-bg-gray-light-v3">
                 <div class="container">
                     <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10" data-header-fix-moment-exclude="g-bg-white g-py-10" data-header-fix-moment-classes="g-py-5">
                         <nav class="navbar navbar-expand-lg">
                             <!-- Responsive Toggle Button -->
-                            <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-10 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-                                <span class="hamburger hamburger--slider">
+                            <button class="navbar-toggler navbar-toggler-right  btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-10 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                                <span class="hamburger hamburger--slider ">
                                     <span class="hamburger-box">
                                         <span class="hamburger-inner"></span>
                                     </span>
@@ -40,30 +40,21 @@
                                         </a>
                                     </li>
                                     <li class="nav-item g-mx-25--lg">
-                                        <a href="#" class="nav-link px-0">Features
+                                        <a href="#" class="nav-link px-0">Our process
                                             
                                         </a>
                                     </li>
                                     <li class="nav-item g-mx-25--lg active">
-                                        <a href="#" class="nav-link px-0">Shortcodes
+                                        <a href="#" class="nav-link px-0">register
                                             <span class="sr-only">(current)</span>
                                         </a>
                                     </li>
                                     <li class="nav-item g-mx-25--lg">
-                                        <a href="#" class="nav-link px-0">Pages
+                                        <a href="#" class="nav-link px-0">Login
                                             
                                         </a>
                                     </li>
-                                    <li class="nav-item g-mx-25--lg">
-                                        <a href="#" class="nav-link px-0">Demos
-                                            
-                                        </a>
-                                    </li>
-                                    <li class="nav-item g-mx-25--lg g-mr-0--lg">
-                                        <a href="#" class="nav-link px-0">What's New
-                                            
-                                        </a>
-                                    </li>
+               
                                 </ul>
                             </div>
                             <!-- End Navigation -->
@@ -114,7 +105,7 @@
                                 <div class="media mb-4">
                                     <div class="d-flex mr-3">
                                         <span class="align-self-center u-icon-v1 u-icon-size--lg g-color-primary">
-                                            <i class="icon-finance-168 u-line-icon-pro"></i>
+                                            <i class="icon-communication-114 u-line-icon-pro"></i>
                                         </span>
                                     </div>
                                     <div class="media-body align-self-center">
@@ -164,7 +155,7 @@
                            
                             <header class="text-center mb-4">
                                   <?php echo $this->Session->flash(); ?>
-                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">LOGIN FORM</h1>
+                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">Authentication</h1>
                             </header>
                             
                             <!-- Form -->
@@ -202,7 +193,7 @@
                                         </label>
                                     </div>
                                     <div class="col align-self-center text-right">
-                                        <a class="g-font-size-13" href="/client/pu_auth/passerecorver">password forgotten?</a>
+                                        <a class="g-font-size-13" href="/client/pu_auth/passerecorver">forgot password ?</a>
                                     </div>
                                 </div>
                                 
@@ -216,10 +207,10 @@
                                 <div class="row no-gutters">
                                     <div class="col-4"></div>
                                     <div class="col-4">
-                                        <button class="btn btn-block u-btn-orange g-py-13 mr-2" type="button">
-                                            <i class="mr-1 fa fa-registered"></i>
+                                        <a class="btn btn-block u-btn-orange g-py-13 mr-2" href="/client/pu_index/signup" type="button">
+                                            <i class="mr-1 fa fa-sign-in"></i>
                                             Signup
-                                        </button>
+                                        </a>
                                     </div>
                                     <div class="col-4"></div>
                                  

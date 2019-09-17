@@ -2,7 +2,7 @@
 <html lang="en">
     
     <head>
-        <title>Authentification</title>
+        <title>Signup</title>
         
     <?php require_once 'css.php';?>
     </head>
@@ -102,34 +102,31 @@
                     <div class="col-md-6 col-lg-5 flex-md-unordered g-mb-80">
                         <div class="g-brd g-brd-none g-bg-white rounded g-px-30 g-py-50 mb-4">
                             <header class="text-center mb-4">
-                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">Inscrivez-vous</h1>
+                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">Signup</h1>
                             </header>
                                 
                             <!-- Form -->
                             <form class="g-py-15" method="POST" action="/client/pu_auth">
                                 <div class="mb-4">
-                                    <input name="nom" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="text" placeholder="Nom">
-                                </div>
+                                    <input name="nom" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="text" placeholder="ex: John Kah">
+                                </div>                            
                                 <div class="mb-4">
-                                    <input name="prenoms" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="text" placeholder="Prénoms">
-                                </div>
-                                <div class="mb-4">
-                                    <input name="email" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="email" placeholder="votre adresse mail">
+                                    <input name="email" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="email" placeholder="your mail address">
                                 </div>
                     
                                 <div class="g-mb-30">
-                                    <input name="password" type="password" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="password" placeholder="Mot de passe">
+                                    <input name="password" type="password" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="password" placeholder="password">
                                 </div>
                     
                                 <div class="g-mb-30">
-                                    <input name="repass" type="password" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="password" placeholder="Mot de passe">
+                                    <input name="repass" type="password" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="password" placeholder="re-password">
                                 </div>
                                 
                           
                                 <div class=" col-md-12">
                                     <div class="checkbox">
                                         <label>
-                                            <input type="checkbox" required> j'accepte <a href="/client/pu_auth/terms_of_use">Les conditions d'utilisation </a>
+                                            <input type="checkbox" required> I've read and accept the <a href="/client/pu_auth/terms_of_use">term of use </a>
                                         </label>
                                     </div>
                                 </div>
@@ -137,61 +134,42 @@
                            
                                 
                                 <div class="text-center mb-5">
-                                    <button name="action" value="signup" type="submit"  class="btn btn-block u-btn-primary rounded g-py-13" >S'inscrire</button>
+                                    <button name="action" value="signup" type="submit"  class="btn btn-block u-btn-primary rounded g-py-13" >Signup</button>
                                 </div>
-                                
-                                <div class="row justify-content-between mb-4">
-                                    <div class="col align-self-center">
-                                        <label class="form-check-inline u-check g-color-gray-dark-v5 g-font-size-13 g-pl-25 mb-0">
-                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
-                                            <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
-                                                <i class="fa g-rounded-2" data-check-icon="&#xf00c"></i>
-                                            </div>
-                                            Resté connecté
-                                        </label>
-                                    </div>
-                                    <div class="col align-self-center text-right">
-                                        <a class="g-font-size-13" href="/client/pu_auth/passerecorver">Forgot password?</a>
-                                    </div>
-                                </div>
-                                
+                         
                               
                                 <div class="d-flex justify-content-center text-center g-mb-30">
                                     <div class="d-inline-block align-self-center g-width-50 g-height-1 g-bg-gray-light-v1"></div>
-                                    <span class="align-self-center g-color-gray-dark-v5 mx-4">OU</span>
+                                    <span class="align-self-center g-color-gray-dark-v5 mx-4">Or do you have an account?</span>
                                     <div class="d-inline-block align-self-center g-width-50 g-height-1 g-bg-gray-light-v1"></div>
                                 </div>
                                 
                                 <div class="row no-gutters">
-                                    <div class="col-6">
-                                        <button class="btn btn-block u-btn-facebook g-py-13 mr-2" type="button">
-                                            <i class="mr-1 fa fa-facebook"></i>
-                                            Facebook
-                                        </button>
+                                    <div class="col-4">
+                                   
                                     </div>
-                                    <div class="col-6">
-                                        <button class="btn btn-block u-btn-twitter g-py-13 ml-2" type="button">
-                                            <i class="mr-1 fa fa-twitter"></i>
-                                            Twitter
-                                        </button>
+                                    <div class="col-4">
+                                        <a class="btn btn-block u-btn-teal g-py-13 mr-2" type="button" href="/client/pu_index/signin">
+                                            <i class="mr-1 fa fa-sign-in"></i>
+                                            Sign in
+                                        </a>
+                                    </div>
+                                    <div class="col-4">
+                                   
                                     </div>
                                 </div>
                             </form>
                             <!-- End Form -->
                         </div>
-                        
-                        <div class="text-center">
-                            <p class="g-color-gray-dark-v5 mb-0">Don't have an account? <a class="g-font-weight-600" href="page-signup-12.html">signup</a>
-                            </p>
-                        </div>
+                                           
                     </div>
                     
                     
                     <div class="col-md-6 flex-md-first g-mb-80">
                         <div class="mb-5">
                             <br/> <br/>
-                            <h2 class="h1 g-font-weight-300 mb-3">IZICHANGE</h2>
-                            <p class="g-color-gray-dark-v5">The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+                            <h2 class="h1 g-font-weight-300 mb-3">TAXI AT THE PIER</h2>
+                            <p class="g-color-gray-dark-v5">Follow these steps to complete your registration process.</p>
                         </div>
                         
                         <div class="row">
@@ -204,7 +182,7 @@
                                         </span>
                                     </div>
                                     <div class="media-body align-self-center">
-                                        <h3 class="h5">Fiabilité</h3>
+                                        <h3 class="h5">Fill the form</h3>
                                         <p class="g-color-gray-dark-v5 mb-0">Reliable contracts, multifanctionality &amp; best usage of Unify template</p>
                                     </div>
                                 </div>
@@ -218,7 +196,7 @@
                                         </span>
                                     </div>
                                     <div class="media-body align-self-center">
-                                        <h3 class="h5">Sécurité</h3>
+                                        <h3 class="h5">Confirm your mail address</h3>
                                         <p class="g-color-gray-dark-v5 mb-0">Secure &amp; integrated options to create individual &amp; business websites</p>
                                     </div>
                                 </div>
@@ -232,7 +210,7 @@
                                         </span>
                                     </div>
                                     <div class="media-body align-self-center">
-                                        <h3 class="h5">Maintain</h3>
+                                        <h3 class="h5">Ready to order</h3>
                                         <p class="g-color-gray-dark-v5 mb-0">We get it, you're busy and it's important that someone keeps up with marketing</p>
                                     </div>
                                 </div>
