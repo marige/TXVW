@@ -14,43 +14,43 @@
         <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
         <!-- CSS Global Compulsory -->
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/icon-awesome/css/font-awesome.min.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/icon-line/css/simple-line-icons.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/icon-hs/style.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/animate.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/dzsparallaxer/dzsparallaxer.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/dzsparallaxer/dzsscroller/scroller.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/dzsparallaxer/advancedscroller/plugin.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/fancybox/jquery.fancybox.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/hs-megamenu/src/hs.megamenu.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/hamburgers/hamburgers.min.css">
-        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/slick-carousel/slick/slick.css">
-        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/themes/base/jquery-ui.min.css">
-        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/themes/base/jquery-ui.min.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/icon-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/icon-line/css/simple-line-icons.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/icon-hs/style.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/animate.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/dzsparallaxer/dzsparallaxer.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/dzsparallaxer/dzsscroller/scroller.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/dzsparallaxer/advancedscroller/plugin.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/fancybox/jquery.fancybox.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/hs-megamenu/src/hs.megamenu.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/hamburgers/hamburgers.min.css">
+        <link  rel="stylesheet" href="<?php echo BASE_URL_THEME; ?>assets/vendor/slick-carousel/slick/slick.css">
+        <link  rel="stylesheet" href="<?php echo BASE_URL_THEME; ?>assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
+        <link  rel="stylesheet" href="<?php echo BASE_URL_THEME; ?>assets/vendor/jquery-ui/themes/base/jquery-ui.min.css">
         <!-- CSS Unify -->
         <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/unify-core.css">
         <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/unify-components.css">
         <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/unify-globals.css">
         <!-- CSS Unify -->
         <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/unify.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/flatpickr/dist/css/flatpickr.min.css">
+        
         <!-- CSS Customization -->
-        <link rel="stylesheet" href="assets/css/custom.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/custom.css">
         <!-- Revolution Slider -->
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/css/settings.css">
-        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution-addons/particles/css/revolution.addon.particles.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/css/settings.css">
+        <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution-addons/particles/css/revolution.addon.particles.css">
         
         <!-- modal -->
         
-        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/animate.css">
-        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/custombox/custombox.min.css">
+        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/animate.css">
+        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/custombox/custombox.min.css">
         
         
         <!-- gallery -->
-        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/icon-hs/style.css">
-        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/fancybox/jquery.fancybox.min.css">
+        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/icon-hs/style.css">
+        <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/fancybox/jquery.fancybox.min.css">
     </head>
     
     <body>
@@ -127,12 +127,10 @@
                     <ul>  <!-- SLIDE  -->
                         <li data-index="rs-10" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeOut" data-easeout="Power4.easeOut" data-masterspeed="default" data-thumb="http://works.themepunch.com/revolution_5_3/wp-content/" data-rotate="0" data-saveperformance="off" data-title="Example One" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
                             <!-- MAIN IMAGE -->
-                            <img src="<?php echo  BASE_URL_THEME; ?>assets/img/transparent.png" data-bgcolor="#ffffff"
+                           <img src="<?php echo  BASE_URL_THEME; ?>assets/img/transparent.png" data-bgcolor="#ffffff"
                                  style='background:#ffffff' alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-                            <!-- LAYERS -->
-                            
                             <!-- LAYER NR. 1 -->
-                            <div class="tp-caption  "
+                            <div class="tp-caption"
                                  id="slide-10-layer-4"
                                  data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
                                  data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
@@ -154,7 +152,7 @@
                                  data-blendmode="screen"
                                  
                                  style="z-index: 5;">
-                                <img src="assets/img/taxi_new_yor.jpg" alt="Image description" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1281">
+                                <img src="<?php echo  BASE_URL_THEME; ?>assets/img/taxi_new_yor.jpg" alt="Image description" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1281">
                             </div>
                             
                             <!-- LAYER NR. 2 -->
@@ -230,8 +228,7 @@
                                 <option>Shopping</option>
                                 <option>Seeing views </option>
                             </select>
-                            
-                            
+                                                       
                         </li>
                         
                         
@@ -249,7 +246,7 @@
                     <!-- End Icon Blocks -->
                     
                     <!-- Icon Blocks -->
-                    <div class="col-lg-4 u-bg-overlay g-bg-img-hero g-bg-purple-opacity-0_9--after g-color-white text-center g-pa-60" style="background-image: url(https://trx.izichange.com/shipping_marius/assets/img-temp/600x400/shopping.jpg);">
+                    <div class="col-lg-4 u-bg-overlay g-bg-img-hero g-bg-purple-opacity-0_9--after g-color-white text-center g-pa-60" style="background-image: url(https://vw.izichange.com/shipping_marius/assets/img-temp/600x400/shopping.jpg);">
                         <div class="u-bg-overlay__inner">
                             <span class="u-icon-v2 u-icon-size--lg u-shadow-v24 rounded-circle g-mb-25">
                                 <i class="icon-layers"></i>
@@ -491,7 +488,7 @@
                                                         
                             <div class="col-sm-6 col-md-3 g-mb-30">
                                 <label for="select4"></label>
-                                <a id="select4" class="btn text-uppercase w-100 u-btn-outline-primary g-brd-2 g-rounded-50 g-font-weight-600 g-pa-15-30" href="#">FIND</a>
+                                <a id="select4" class="btn text-uppercase w-100 u-btn-outline-primary g-brd-2 g-rounded-50 g-font-weight-600 g-pa-15-30" href="/client/pu_index/signin">FIND</a>
                             </div>
                         </div>
             
@@ -501,14 +498,12 @@
             </section>
             <div class="shortcode-styles">
                 
-                <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/slick-carousel/slick/slick.css">
+                <link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/slick-carousel/slick/slick.css">
             </div>
             <div class="shortcode-scripts">
                 
-                <script src="<?php echo  BASE_URL_THEME; ?>assets/chosen/chosen.jquery.js"></script>
-                
-                <script src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.select.js"></script>
-                
+                <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/chosen/chosen.jquery.js"></script>
+         
                 <script >
                     $(document).ready(function () {
                         // initialization of custom select
@@ -804,7 +799,7 @@
                             
                             <ul class="list-inline d-flex justify-content-between g-mb-15">
                                 <li class="list-inline-item g-mr-20">
-                                    <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="assets/img-temp/100x100/img1.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#">Taxi at pier</a>
+                                    <img class="g-height-25 g-width-25 rounded-circle g-mr-5" src="<?php echo  BASE_URL_THEME; ?>assets/img-temp/100x100/img1.jpg" alt="Image Description"> <a class="u-link-v5 g-color-main g-color-primary--hover" href="#">Taxi at pier</a>
                                 </li>
                                 <li class="list-inline-item">
                                     <span class="js-rating d-block g-color-primary" data-rating="5"></span>
@@ -973,7 +968,7 @@
                         </div>
                         
                         <div class="col-lg-4 text-center g-order-1--lg">
-                            <img class="img-fluid" src="assets/img-temp/348x660/img1.png" alt="Image description">
+                            <img class="img-fluid" src="<?php echo  BASE_URL_THEME; ?>assets/img-temp/348x660/img1.png" alt="Image description">
                         </div>
                     </div>
                 </div>
@@ -1211,7 +1206,7 @@
         
         <div class="u-outer-spaces-helper"></div>
         
-        <script src="assets/js/components/hs.select.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.select.js"></script>
         
         <script >
             $(document).ready(function () {
@@ -1224,20 +1219,20 @@
         
         
         <!-- JS Global Compulsory -->
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/jquery/jquery.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/jquery-migrate/jquery-migrate.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/popper.js/popper.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/bootstrap/bootstrap.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery/jquery.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/popper.js/popper.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/bootstrap/bootstrap.min.js"></script>
         
         
         <!-- JS Implementing Plugins -->
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/appear.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/hs-megamenu/src/hs.megamenu.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/circles/circles.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/dzsparallaxer/dzsparallaxer.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/dzsparallaxer/dzsscroller/scroller.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/dzsparallaxer/advancedscroller/plugin.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/fancybox/jquery.fancybox.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/appear.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/circles/circles.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/fancybox/jquery.fancybox.min.js"></script>
         
         <!-- JS Unify -->
         <script src="<?php echo  BASE_URL_THEME; ?>assets/js/hs.core.js"></script>
@@ -1253,27 +1248,24 @@
         <script src="<?php echo  BASE_URL_THEME; ?>assets/js/custom.js"></script>
         
         <!-- JS Revolution Slider -->
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution-addons/particles/js/revolution.addon.particles.min.js"></script>
-        
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/jquery.themepunch.tools.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/jquery.themepunch.revolution.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution-addons/particles/js/revolution.addon.particles.min.js"></script>       
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/revolution-slider/revolution/js/extensions/revolution.extension.video.min.js"></script>       
         <!-- JS form -->
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/chosen/chosen.jquery.js"></script>
-        <script src="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/ui/widgets/datepicker.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/chosen/chosen.jquery.js"></script>
+        <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/widgets/datepicker.js"></script>
         <script src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.datepicker.js"></script>
         
-        <script  src="<?php echo  BASE_URL_THEME; ?>assets/custombox/custombox.min.js"></script>
+        <script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/custombox/custombox.min.js"></script>
         
         <script  src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.modal-window.js"></script>
         
@@ -1287,7 +1279,7 @@
         <!-- galery -->              
         
         
-        <script  src="<?php echo  BASE_URL_THEME; ?>assets/fancybox/jquery.fancybox.min.js"></script>
+        <script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/fancybox/jquery.fancybox.min.js"></script>
         
         <script  src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.popup.js"></script>
         
@@ -1314,29 +1306,27 @@
             });
         </script>
         
-<script  src="<?php echo BASE_URL_THEME; ?>assets/jquery-ui/ui/widget.js"></script>
-<script  src="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/ui/version.js"></script>
-<script  src="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/ui/keycode.js"></script>
-<script  src="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/ui/position.js"></script>
-<script  src="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/ui/unique-id.js"></script>
-<script  src="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/ui/safe-active-element.js"></script>
+<script  src="<?php echo BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/widget.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/version.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/keycode.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/position.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/unique-id.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/safe-active-element.js"></script>
 
-<script  src="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/ui/widgets/menu.js"></script>
-<script  src="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/ui/widgets/mouse.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
 
-<script  src="<?php echo  BASE_URL_THEME; ?>assets/jquery-ui/ui/widgets/datepicker.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/widgets/datepicker.js"></script>
 
 <script  src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.datepicker.js"></script>
 
-<script >
+            <script >
                 $(document).on('ready', function () {
                       // initialization of forms
                       $.HSCore.components.HSDatepicker.init('#datepickerDefault, #datepickerInline, #datepickerInlineFrom, #datepickerFrom');
                     });
-              </script>
+            </script>
         
-        <!-- JS Custom -->
-        <script src="<?php echo  BASE_URL_THEME; ?><?php echo  BASE_URL_THEME; ?>assets/js/custom.js"></script>
         
         <!-- JS Plugins Init. -->
         <script>
