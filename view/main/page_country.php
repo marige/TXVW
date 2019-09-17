@@ -265,7 +265,7 @@
                         <h5 class="g-mb-20"><b>Surprise, Surprise!!!</b></h5>
                         <div class="col-md-12" align="center">
                             <a class="js-fancybox d-block u-bg-overlay  g-mb-30" href="javascript:;" data-fancybox="lightbox-gallery--05" data-src="<?php echo  BASE_URL_THEME; ?>assets/img/png.png" data-speed="350" data-caption="Lightbox Gallery">
-                                <img class="img-fluid" src="<?php echo  BASE_URL_THEME; ?><?php echo  BASE_URL_THEME; ?>assets/img/500x450/seeingview/emoji.png" alt="Image Description">
+                                <img class="img-fluid" src="<?php echo  BASE_URL_THEME; ?>assets/img/500x450/seeingview/emoji.png" alt="Image Description">
                             </a>
                             
                         </div>
