@@ -264,8 +264,8 @@
                         <h4 class="g-mb-20 ">Seeing views</h4>
                         <h5 class="g-mb-20"><b>Surprise, Surprise!!!</b></h5>
                         <div class="col-md-12" align="center">
-                            <a class="js-fancybox d-block u-bg-overlay  g-mb-30" href="javascript:;" data-fancybox="lightbox-gallery--05" data-src="assets/img/png.png" data-speed="350" data-caption="Lightbox Gallery">
-                                <img class="img-fluid" src="<?php echo  BASE_URL_THEME; ?>assets/img/500x450/seeingview/emoji.png" alt="Image Description">
+                            <a class="js-fancybox d-block u-bg-overlay  g-mb-30" href="javascript:;" data-fancybox="lightbox-gallery--05" data-src="<?php echo  BASE_URL_THEME; ?>assets/img/png.png" data-speed="350" data-caption="Lightbox Gallery">
+                                <img class="img-fluid" src="<?php echo  BASE_URL_THEME; ?><?php echo  BASE_URL_THEME; ?>assets/img/500x450/seeingview/emoji.png" alt="Image Description">
                             </a>
                             
                         </div>
@@ -285,7 +285,7 @@
                         </div>
                         
                         <div class="col-md-12" align="center">
-                            <a class="js-fancybox d-block u-bg-overlay " href="javascript:;" data-fancybox="lightbox-gallery--05" data-src="assets/img/500x450/seeingviews.jpg" data-speed="350" data-caption="Lightbox Gallery">
+                            <a class="js-fancybox d-block u-bg-overlay " href="javascript:;" data-fancybox="lightbox-gallery--05" data-src="<?php echo  BASE_URL_THEME; ?>assets/img/500x450/seeingviews.jpg" data-speed="350" data-caption="Lightbox Gallery">
                                 <img class="img-fluid" src="<?php echo  BASE_URL_THEME; ?>assets/img/500x450/seeingviews.jpg" alt="Image Description">
                             </a>
                         </div>
@@ -293,7 +293,7 @@
                     </div>
                     
                     <!-- Icon Blocks -->
-                    <div class="col-lg-4 u-bg-overlay g-bg-img-hero g-bg-cyan-opacity-0_9--after g-color-white text-center g-pa-60" style="background-image: url(assets/img-temp/600x400/excursion.jpg);">
+                    <div class="col-lg-4 u-bg-overlay g-bg-img-hero g-bg-cyan-opacity-0_9--after g-color-white text-center g-pa-60" style="background-image: url(<?php echo  BASE_URL_THEME; ?>assets/img-temp/600x400/excursion.jpg);">
                         <div class="u-bg-overlay__inner">
                             <span class="u-icon-v2 u-shadow-v24 g-brd-2 rounded-circle g-mb-25">
                                 <i class="icon-chemistry"></i>
