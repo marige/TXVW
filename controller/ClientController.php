@@ -20,7 +20,7 @@ class ClientController extends Controller {
         {
         //Afficher les fenetres login register... lorsque la personne n'est pas connecté
           //  $this->render($param,"clientlayout");
-            $this->render($param,"nolayout");
+            $this->render($param);
         } 
         elseif ($param=="terms_of_use") {
             $this->render($param,"clientlayout");

@@ -99,90 +99,13 @@
             <!-- Login -->
             <section class="container g-pt-100 g-pb-20 g-bg-lightblue-radialgradient-ellipse" >
                 <div class="row justify-content-between">
-                    <div class="col-md-6 col-lg-5 flex-md-unordered g-mb-80">
-                        <div class="g-brd-around g-brd-gray-light-v3 g-bg-white rounded g-px-30 g-py-50 mb-4">
-                           
-                            <header class="text-center mb-4">
-                                  <?php echo $this->Session->flash(); ?>
-                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">Connectez-vous</h1>
-                            </header>
-                            
-                            <!-- Form -->
-                            <form method="POST" action="/client/pu_auth/login" class="g-py-15">
-                                <div class="mb-4">
-                                    <div class="input-group g-brd-primary--focus">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v3 g-color-gray-dark-v5"><i class="icon-finance-067 u-line-icon-pro"></i></span>
-                                        </div>
-                                        <input name="email" required class="form-control g-color-black g-brd-gray-light-v3 g-py-15 g-px-15" type="email" placeholder="VOtre adresse mail">
-                                    </div>
-                                </div>
-                                
-                                <div class="mb-4">
-                                    <div class="input-group g-brd-primary--focus mb-4">
-                                        <div class="input-group-prepend">
-                                            <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v3 g-color-gray-dark-v5"><i class="icon-media-094 u-line-icon-pro"></i></span>
-                                        </div>
-                                        <input name="password" required class="form-control g-color-black g-brd-gray-light-v3 g-py-15 g-px-15" type="password" placeholder="Password">
-                                    </div>
-                                </div>
-                                
-                                <div class="text-center mb-5">
-                                    <button name="action" value="signin" type="submit"  class="btn btn-block u-btn-primary rounded g-py-13" type="submit" >Se connecter</button>
-                                </div>
-                                
-                                <div class="row justify-content-between mb-4">
-                                    <div class="col align-self-center">
-                                        <label class="form-check-inline u-check g-color-gray-dark-v5 g-font-size-13 g-pl-25 mb-0">
-                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
-                                            <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
-                                                <i class="fa g-rounded-2" data-check-icon="&#xf00c"></i>
-                                            </div>
-                                            Resté connecté
-                                        </label>
-                                    </div>
-                                    <div class="col align-self-center text-right">
-                                        <a class="g-font-size-13" href="/client/pu_auth/passerecorver">Mot de passe oublié?</a>
-                                    </div>
-                                </div>
-                                
-                              
-                                <div class="d-flex justify-content-center text-center g-mb-30">
-                                    <div class="d-inline-block align-self-center g-width-50 g-height-1 g-bg-gray-light-v1"></div>
-                                    <span class="align-self-center g-color-gray-dark-v5 mx-4">OU</span>
-                                    <div class="d-inline-block align-self-center g-width-50 g-height-1 g-bg-gray-light-v1"></div>
-                                </div>
-                                
-                                <div class="row no-gutters">
-                                    <div class="col-6">
-                                        <button class="btn btn-block u-btn-facebook g-py-13 mr-2" type="button">
-                                            <i class="mr-1 fa fa-facebook"></i>
-                                            Facebook
-                                        </button>
-                                    </div>
-                                    <div class="col-6">
-                                        <button class="btn btn-block u-btn-twitter g-py-13 ml-2" type="button">
-                                            <i class="mr-1 fa fa-twitter"></i>
-                                            Twitter
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                            <!-- End Form -->
-                        </div>
-                        
-                        <div class="text-center">
-                            <p class="g-color-gray-dark-v5 mb-0">Don't have an account? <a class="g-font-weight-600" href="page-signup-12.html">signup</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-                    
+                   
+     
                     <div class="col-md-6 flex-md-first g-mb-80">
                         <div class="mb-5">
                             <br/> <br/>
-                            <h2 class="h1 g-font-weight-300 mb-3">BIENVENUE SUR IZICHANGE</h2>
-                            <p class="g-color-gray-dark-v5">The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+                            <h2 class="h1 g-font-weight-300 mb-3">WELCOME TO YOU</h2>
+                            <p class="g-color-gray-dark-v5">The time has come to bring those ideas and plans to life. This is where we really begin to provide you our service.</p>
                         </div>
                         
                         <div class="row">
@@ -195,7 +118,7 @@
                                         </span>
                                     </div>
                                     <div class="media-body align-self-center">
-                                        <h3 class="h5">Fiabilité</h3>
+                                        <h3 class="h5">Easy</h3>
                                         <p class="g-color-gray-dark-v5 mb-0">Reliable contracts, multifanctionality &amp; best usage of Unify template</p>
                                     </div>
                                 </div>
@@ -209,7 +132,7 @@
                                         </span>
                                     </div>
                                     <div class="media-body align-self-center">
-                                        <h3 class="h5">Sécurité</h3>
+                                        <h3 class="h5">Simple</h3>
                                         <p class="g-color-gray-dark-v5 mb-0">Secure &amp; integrated options to create individual &amp; business websites</p>
                                     </div>
                                 </div>
@@ -223,13 +146,89 @@
                                         </span>
                                     </div>
                                     <div class="media-body align-self-center">
-                                        <h3 class="h5">Maintain</h3>
+                                        <h3 class="h5">Quicker</h3>
                                         <p class="g-color-gray-dark-v5 mb-0">We get it, you're busy and it's important that someone keeps up with marketing</p>
                                     </div>
                                 </div>
                                 <!-- End Icon Blocks -->
                             </div>
                         </div>
+                    </div>
+                    
+                   <br/>
+                   <br/>
+                   <br/>
+                   <br/>
+                   <div class="col-md-6 col-lg-5 flex-md-unordered g-mb-80" style="margin-top:30px">
+                        <div class="g-brd-around g-brd-gray-light-v3 g-bg-white rounded g-px-30 g-py-50 mb-4">
+                           
+                            <header class="text-center mb-4">
+                                  <?php echo $this->Session->flash(); ?>
+                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">LOGIN FORM</h1>
+                            </header>
+                            
+                            <!-- Form -->
+                            <form method="POST" action="/client/pu_auth/login" class="g-py-15">
+                                <div class="mb-4">
+                                    <div class="input-group g-brd-primary--focus">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v3 g-color-gray-dark-v5"><i class="icon-finance-067 u-line-icon-pro"></i></span>
+                                        </div>
+                                        <input name="email" required class="form-control g-color-black g-brd-gray-light-v3 g-py-15 g-px-15" type="email" placeholder="your mail address">
+                                    </div>
+                                </div>
+                                
+                                <div class="mb-4">
+                                    <div class="input-group g-brd-primary--focus mb-4">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v3 g-color-gray-dark-v5"><i class="icon-media-094 u-line-icon-pro"></i></span>
+                                        </div>
+                                        <input name="password" required class="form-control g-color-black g-brd-gray-light-v3 g-py-15 g-px-15" type="password" placeholder="Password">
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center mb-5">
+                                    <button name="action" value="signin" type="submit"  class="btn btn-block u-btn-primary rounded g-py-13" type="submit" >Login</button>
+                                </div>
+                                
+                                <div class="row justify-content-between mb-4">
+                                    <div class="col align-self-center">
+                                        <label class="form-check-inline u-check g-color-gray-dark-v5 g-font-size-13 g-pl-25 mb-0">
+                                            <input class="g-hidden-xs-up g-pos-abs g-top-0 g-left-0" type="checkbox">
+                                            <div class="u-check-icon-checkbox-v6 g-absolute-centered--y g-left-0">
+                                                <i class="fa g-rounded-2" data-check-icon="&#xf00c"></i>
+                                            </div>
+                                            Remember me
+                                        </label>
+                                    </div>
+                                    <div class="col align-self-center text-right">
+                                        <a class="g-font-size-13" href="/client/pu_auth/passerecorver">password forgotten?</a>
+                                    </div>
+                                </div>
+                                
+                              
+                                <div class="d-flex justify-content-center text-center g-mb-30">
+                                    <div class="d-inline-block align-self-center g-width-50 g-height-1 g-bg-gray-light-v1"></div>
+                                    <span class="align-self-center g-color-gray-dark-v5 mx-4">If you don't have an account?</span>
+                                    <div class="d-inline-block align-self-center g-width-50 g-height-1 g-bg-gray-light-v1"></div>
+                                </div>
+                                
+                                <div class="row no-gutters">
+                                    <div class="col-4"></div>
+                                    <div class="col-4">
+                                        <button class="btn btn-block u-btn-orange g-py-13 mr-2" type="button">
+                                            <i class="mr-1 fa fa-registered"></i>
+                                            Signup
+                                        </button>
+                                    </div>
+                                    <div class="col-4"></div>
+                                 
+                                </div>
+                            </form>
+                            <!-- End Form -->
+                        </div>
+                        
+                     
                     </div>
                 </div>
             </section>

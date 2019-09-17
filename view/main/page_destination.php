@@ -115,7 +115,7 @@
           <ul>  <!-- SLIDE  -->
             <li data-index="rs-10" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeOut" data-easeout="Power4.easeOut" data-masterspeed="default" data-thumb="http://works.themepunch.com/revolution_5_3/wp-content/" data-rotate="0" data-saveperformance="off" data-title="Example One" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
               <!-- MAIN IMAGE -->
-              <img src="<?php echo  BASE_URL_THEME; ?>assets/img/taxi_new_york.png" data-bgcolor="#ffffff"
+             <img src="<?php echo  BASE_URL_THEME; ?>assets/img/transparent.png" data-bgcolor="#ffffff"
                style='background:#ffffff' alt="Image description" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
               <!-- LAYERS -->
  
@@ -142,7 +142,7 @@
                    data-blendmode="screen"
 
                    style="z-index: 5;">
-                 <img src="<?php echo  BASE_URL_THEME; ?>assets/img/taxi_new_york.jpg" alt="Image description" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1281">
+                 <img src="<?php echo  BASE_URL_THEME; ?>assets/img/taxi_new_yor.jpg" alt="Image description" data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']" data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']" width="1920" height="1281">
                 
               </div>
 
