@@ -11,9 +11,9 @@
         <main>
             
             <!-- Header -->
-            <header id="js-header" class="u-header u-header--static u-header--floating g-mt-40--lg" data-header-fix-moment-classes="u-shadow-v18 g-bg-teal">
+            <header id="js-header" class="u-header u-header--static u-header--floating g-mt-40--lg g-bg-white" data-header-fix-moment-classes="u-shadow-v18">
                 <div class="container">
-                    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10" data-header-fix-moment-exclude="g-bg-white g-py-10" data-header-fix-moment-classes="g-py-5">
+                    <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10" data-header-fix-moment-exclude="g-py-10" data-header-fix-moment-classes="g-py-5">
                         <nav class="navbar navbar-expand-lg">
                             <!-- Responsive Toggle Button -->
                             <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-10 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
@@ -97,7 +97,7 @@
             <!-- End Header -->
             
             <!-- Login -->
-            <section class="container g-pt-100 g-pb-20 g-bg-lightblue-radialgradient-ellipse" >
+            <section class="container g-pt-100 g-pb-20 g-bg-white--focus" >
                 <div class="row justify-content-between">
                    
      
@@ -159,8 +159,8 @@
                    <br/>
                    <br/>
                    <br/>
-                   <div class="col-md-6 col-lg-5 flex-md-unordered g-mb-80" style="margin-top:30px">
-                        <div class="g-brd-around g-brd-gray-light-v3 g-bg-white rounded g-px-30 g-py-50 mb-4">
+                   <div class="col-md-6 col-lg-5 flex-md-unordered g-mb-80 u-shadow-v24" style="margin-top:30px">
+                        <div class="g-brd-around g-bg-white rounded g-px-30 g-py-50 mb-4">
                            
                             <header class="text-center mb-4">
                                   <?php echo $this->Session->flash(); ?>
@@ -216,10 +216,10 @@
                                 <div class="row no-gutters">
                                     <div class="col-4"></div>
                                     <div class="col-4">
-                                        <button class="btn btn-block u-btn-orange g-py-13 mr-2" type="button">
+                                        <a class="btn btn-block u-btn-orange g-py-13 mr-2" href="/client/pu_index/signup" type="button">
                                             <i class="mr-1 fa fa-registered"></i>
                                             Signup
-                                        </button>
+                                        </a>
                                     </div>
                                     <div class="col-4"></div>
                                  

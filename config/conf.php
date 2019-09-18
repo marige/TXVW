@@ -8,7 +8,7 @@ class Conf
 		static $databases = array(
 			'default' => array(
 					'host'        =>'sg1-ls5.a2hosting.com',
-					'login'       =>'izichang_admin',
+					'login'       =>'izichang_taxi',
 					'password'    =>'G10passe@it123ql',
 					'database'    =>'izichang_db_ops'
 				),
