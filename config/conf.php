@@ -8,16 +8,11 @@ class Conf
 		static $databases = array(
 			'default' => array(
 					'host'        =>'sg1-ls5.a2hosting.com',
-					'login'       =>'izichang_taxi',
-					'password'    =>'G10passe@it123ql',
-					'database'    =>'izichang_db_ops'
-				),
-				'planning' => array(
-					'host'        =>'localhost',
-					'login'        =>'root',
-					'password'    =>'toor',
-					'database'    =>'planningDB'
-				 )
+					'login'       =>'izichang_vw',
+					'password'    =>'c2N-4vL-k5W-LzK',
+					'database'    =>'izichang_vw'
+				)
+			
 	);
 
 }
