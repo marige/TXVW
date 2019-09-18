@@ -13,7 +13,7 @@
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/slick-carousel/slick/slick.js"></script>
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-
+ 
   <!-- JS Implementing Plugins -->
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
 

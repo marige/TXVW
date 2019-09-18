@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
  
-  <!-- Favicon -->
+  <!-- Favicon --> 
   <link rel="shortcut icon" href="<?php echo  BASE_URL_THEME; ?>favicon.ico">
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
