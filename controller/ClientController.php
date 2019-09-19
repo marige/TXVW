@@ -372,14 +372,14 @@ class ClientController extends Controller {
     }
     
     public function pu_profil(){
-        $this->isClientLevelOne();
+       // $this->isClientLevelOne();
         
         if(!isset($this->Client)){
-        $this->loadModel('Client');
+       // $this->loadModel('Client');
         }
         
-        $this->set("client",$this->Client->getClient($_SESSION['clientInfoID']));
-        $this->render('profil_client','layout');
+       // $this->set("client",$this->Client->getClient($_SESSION['clientInfoID']));
+        $this->render('profil_client','dashboard_client');
     }
     
     

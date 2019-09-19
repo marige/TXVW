@@ -6,7 +6,7 @@
   <!-- Title -->
     <meta property="og:image" content="https://izichange.com/theme3/images/photo.jpg"> 
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>IZICHANGE</title>
+    <title>TAXI AT THE PIER</title>
     <meta name="description" content="Plateforme d'échange de devises certifiée"/>
    <!-- Required Meta Tags Always Come First -->
   <meta charset="utf-8">
@@ -36,7 +36,7 @@
   <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/hamburgers/hamburgers.min.css">
 
   <!-- CSS Unify -->
-  <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/assets/css/unify-admin.css">
+  <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/unify-admin.css">
 
   <!-- CSS Customization -->
   <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/custom.css">
@@ -50,7 +50,7 @@
                     <!-- Logo -->
                         
                     <a href="" class="navbar-brand d-flex align-self-center g-hidden-xs-down g-line-height-1 py-0 g-mt-5 u-header-logo"> 
-                        IZICHANGE </a>
+                        TAXI AT THE PIER</a>
                     <!-- End Logo -->
                     
                     <!-- Sidebar Toggler -->
@@ -90,7 +90,7 @@
                                data-dropdown-animation-in="fadeIn" data-dropdown-animation-out="fadeOut">
                                 <span class="g-pos-rel">
                                     <span class="u-badge-v2--xs u-badge--top-right g-hidden-sm-up g-bg-secondary g-mr-5"></span>
-                                    <img class="g-width-30 g-width-40--md g-height-30 g-height-40--md rounded-circle g-mr-10--sm" src="<?php echo  BASE_URL_THEME; ?>assets//img-temp/130x130/130x130.png" alt="Image description">
+                                    <img class="g-width-30 g-width-40--md g-height-30 g-height-40--md rounded-circle g-mr-10--sm" <img id="logo_img" style="height:60px" class="img-responsive" src="<?php echo  BASE_URL_THEME; ?>assets/img/logo.png" alt="TAXI AT THE PEER">
                                 </span>
                                 <span class="g-pos-rel g-top-2">
                                     <span class="g-hidden-sm-down"><?php if(isset($_SESSION['clientInfoEmail'])) {echo $_SESSION['clientInfoEmail'];} ?></span>
@@ -173,7 +173,7 @@
                             <span class="d-flex align-self-center g-pos-rel g-font-size-18 g-mr-18">
                                 <i class="hs-admin-check-box"></i>
                             </span>
-                            <span class="media-body align-self-center">Mon compte</span>
+                            <span class="media-body align-self-center">MY TRANSACTIONS</span>
                             <span class="d-flex align-self-center u-side-nav--control-icon">
                                 <i class="hs-admin-angle-right"></i>
                             </span>
@@ -188,27 +188,27 @@
                                     <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
                                         <i class="hs-admin-blackboard"></i>
                                     </span>
-                                    <span class="media-body align-self-center">Liste des Opérations</span>
+                                    <span class="media-body align-self-center">List of transactions</span>
                                 </a>
                             </li>
                             <!-- End Icons -->
                             <!-- Icons -->
                             <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-                                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/client/pu_referral">
+                                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/client/">
                                     <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
                                         <i class="hs-admin-wallet"></i>
                                     </span>
-                                    <span class="media-body align-self-center">Bonus Referral</span>
+                                    <span class="media-body align-self-center">On going transactions</span>
                                 </a>
                             </li>
                             <!-- End Icons -->
                              <!-- Icons -->
                             <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-                                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/client/pu_listeFieul">
+                                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/client/">
                                     <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
                                         <i class="hs-admin-wand"></i>
                                     </span>
-                                    <span class="media-body align-self-center">Liste Fieul</span>
+                                    <span class="media-body align-self-center">Liste of favorits</span>
                                 </a>
                             </li>
                             <!-- End Icons -->
@@ -310,7 +310,7 @@
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/unique-id.js"></script>
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/safe-active-element.js"></script>
 
-  <!-- jQuery UI Helpers -->
+  <!-- jQuery UI Helpers --> 
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/widgets/menu.js"></script>
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/widgets/mouse.js"></script>
 
