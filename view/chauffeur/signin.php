@@ -164,7 +164,7 @@
                            
                             <header class="text-center mb-4">
                                   <?php echo $this->Session->flash(); ?>
-                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">LOGIN FORM</h1>
+                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">LOGIN FOR DRIVERS</h1>
                             </header>
                             
                             <!-- Form -->
@@ -174,7 +174,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text g-width-45 g-brd-right-none g-brd-gray-light-v3 g-color-gray-dark-v5"><i class="icon-finance-067 u-line-icon-pro"></i></span>
                                         </div>
-                                        <input name="email" required class="form-control g-color-black g-brd-gray-light-v3 g-py-15 g-px-15" type="email" placeholder="your mail address">
+                                        <input name="email" required class="form-control g-color-black g-brd-gray-light-v3 g-py-15 g-px-15" type="email" placeholder="driver's mail address">
                                     </div>
                                 </div>
                                 

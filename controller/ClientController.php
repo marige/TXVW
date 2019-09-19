@@ -4,10 +4,6 @@
 class ClientController extends Controller {
     
 	public function pu_index($param=NULL){
-	
-	//$this->loadModel('Client');
-        
-        
 	if(isset($this->request->data->action)){
            
             $var=$this->request->data->action;

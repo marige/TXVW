@@ -101,7 +101,7 @@
                         <div class="g-brd   g-bg-white--focus rounded g-px-30 g-py-50 mb-4">
                             <header class="text-center mb-4">
                                   <?php echo $this->Session->flash(); ?>
-                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">Signup</h1>
+                                <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">Signup for drivers</h1>
                             </header>
                                 
                             <!-- Form -->
