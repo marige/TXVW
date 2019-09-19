@@ -4,10 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/OBAM/Desktop/WEB/TAXI/TXVW/controller/ClientController.php</file>
-            <file>file:/C:/Users/OBAM/Desktop/WEB/TAXI/TXVW/view/main/index.php</file>
+            <file>file:/C:/Users/OBAM/Desktop/WEB/TAXI/TXVW/model/Client.php</file>
             <file>file:/C:/Users/OBAM/Desktop/WEB/TAXI/TXVW/view/client/signin.php</file>
-            <file>file:/C:/Users/OBAM/Desktop/WEB/TAXI/TXVW/view/main/page_country.php</file>
-            <file>file:/C:/Users/OBAM/Desktop/WEB/TAXI/TXVW/view/client/signup.php</file>
+            <file>file:/C:/Users/OBAM/Desktop/WEB/TAXI/TXVW/view/client/auth.php</file>
+            <file>file:/C:/Users/OBAM/Desktop/WEB/TAXI/TXVW/core/Controller.php</file>
         </group>
     </open-files>
 </project-private>

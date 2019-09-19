@@ -1,21 +1,18 @@
 <?php
 
 
-class ClientController extends Controller {
+class ChauffeurController extends Controller {
     
 	public function pu_index($param=NULL){
 	
 	//$this->loadModel('Client');
-        
-        
+         
 	if(isset($this->request->data->action)){
            
             $var=$this->request->data->action;
             
-            $param=$this->$var($this->request->data);
-           
-	}
-        
+            $param=$this->$var($this->request->data);         
+	} 
         
         if(($param=="signin"||$param=="signup"||$param=="reset")&& !isset($_SESSION["clientInfoID"]))
         {
@@ -27,7 +24,7 @@ class ClientController extends Controller {
             $this->render($param,"clientlayout");
         }
         else {
-            $this->render('auth');
+            $this->render('index');
         }
         		
     }
@@ -39,7 +36,6 @@ class ClientController extends Controller {
          $this->Session->setFlash("<h6><b>Please write a correct email </b></h6>","danger");
          return "signin";				   
         }
-       
         $user=$this->Client->authClient($data->email,$data->password);
                                 if(isset($user[0])){
                                     $this->Session->setLogged($user[0]->idclient);
