@@ -13,6 +13,7 @@ class ClientController extends Controller {
             $var=$this->request->data->action;
             
             $param=$this->$var($this->request->data);
+           
 	}
         
         
@@ -36,68 +37,58 @@ class ClientController extends Controller {
         $this->loadModel('Client');
         if(!$this->valideMail($data->email)){
          $this->Session->setFlash("<h6><b>Please write a correct email </b></h6>","danger");
-         return;				   
+         return "signin";				   
         }
-        $this->secureInput($data->password);
+       
         $user=$this->Client->authClient($data->email,$data->password);
                                 if(isset($user[0])){
                                     $this->Session->setLogged($user[0]->idclient);
                                     $this->Session->write("clientInfoID",$user[0]->idclient);
                                     $this->Session->write("clientStatut",$user[0]->statut);
                                     $this->Session->write("clientInfoEmail",$user[0]->email);
-                                    $this->Session->setFlash("<h6>Bienvenue <b>".$user[0]->email."</b> </h6>","success");
-                                }else
+                                    $this->Session->setFlash("<h6>Welcome <b>".$user[0]->email."</b> </h6>","success");
+                                    echo 'you are logged';
+                                    die();
+                                }
+                                else
 				{
-                                    $this->Session->setFlash("<h6><b>Veuillez Saisir de Corrects Identifiants </b></h6>","danger");
+                                    $this->Session->setFlash("<h6><b>Invalid login or password</b></h6>","danger");                                
                                     $this->Session->setError();	
+                                    return "signin";
                                 }
     }
     
 
     public function signup($data){   
         $this->loadModel('Client');
-        if ($data->password!=$data->repass) {
-            $this->Session->setFlash("<h6><b>Mot de pass non conforme Veuillez ressayer </b></h6>","warning");
+        if (isset($data->password) & ($data->password!=$data->repass)) {
+            $this->Session->setFlash("<h6><b>Your password and re-password don't match </b></h6>","warning");
             return "signup";
         }
+        if(!isset($data->name)){
+            $this->Session->setFlash("<h6><b>You need to provide a valid name </b></h6>","warning");
+            return "signup";
+        }
+            
         
 	if(!$this->valideMail($data->email)){
          $this->Session->setFlash("<h6><b>Please write a correct email </b></h6>","danger");
          return "signup";			   
         }
         
-        if(!$this->validePassword($data->password)){
-         $this->Session->setFlash("<h6><b>Please write a correct password with 8 caracteres </b></h6>","danger");
-         return "signup";			   
-        }
-         
         if($this->Client->getValideClient($data->email)){
-            $this->Session->setFlash("<h6><b>Utilisateur déja enregistré, veuillez vous connecter </b></h6>","warning");
+            $this->Session->setFlash("<h6><b>The account with $data->email exist. You just need to sign in</b></h6>","warning");
             return "signin";
         }
                     
         $tab4 = array(); 
-        $userNewId=$this->Client->getIdClient($data->email);
-                                    
-        if (isset($userNewId[0]->idclient)) 
-            {
-                $tab4['idclient'] = $userNewId[0]->idclient;
-            }
-
-        $tab4['email'] = htmlspecialchars($data->email);
-        $tab4['password'] = sha1($data->password);
-        if(isset($data->parrain_id)&&!empty($data->parrain_id))
-           $tab4['parrain_id'] =$data->parrain_id;
-       
-
-        if(isset($tab4['idclient'])){
-                $this->Client->update($tab4);
-            }else{   
-                $clientInfoID=$this->Client->insert($tab4);
-                $tab4['idclient']=$clientInfoID;
-             }             
+        $tab4['email'] =$data->email;
+        $tab4['name'] =$data->name;
+        $tab4['statut'] ="0";
+        $tab4['password'] = sha1($data->password);     
+                $clientInfoID=$this->Client->insert($tab4);                     
         $this->pu_confirme_mail($tab4['email']);
-        $this->Session->setFlash("<h6>Veuillez consulter votre mail <b>".$tab4['email']."</b> Pour confirmer </h6>","info");
+        $this->Session->setFlash("<h6>You've successful registered !!!\n Please check your mailbo: <b>".$tab4['email']."</b> to activate your account </h6>","info");
         return "signup";
     }
 				
@@ -109,7 +100,7 @@ class ClientController extends Controller {
         }
         
         if(!$this->valideMail($data->email)){
-         $this->Session->setFlash("<h6><b>Veuillez Saisir un email correct </b></h6>","danger");
+         $this->Session->setFlash("<h6><b>Invalid mail address  </b></h6>","danger");
          return;			   
         }
         
@@ -437,7 +428,7 @@ class ClientController extends Controller {
             $code=$this->tokenGenerator($email);
             $this->send_mail_validation($client_temp_data,$code,$email);
             }
-        $this->Session->setFlash("<h6><b>Veuillez consulter votre boite mail pour  le lien d'activation  </b></h6>","success");
+        $this->Session->setFlash("<h6><b>You've succesfull  registered </b> check your mailbox to activate your account</h6>","success");
          
     }
     
@@ -455,7 +446,7 @@ class ClientController extends Controller {
                     . "<br/>"
                     . "<br/> Si cela ne vient pas de vous , veuillez ignorer ce message."
                     . "<br/> https://".DOMAINE
-                    . "<br/>Admin IZI Change";
+                    . "<br/>Admin TAXI AT THE PIER";
         $emailArray=array($email => '');
         $this->sendMail($emailArray, $textMail,"Validation Mail ");
 

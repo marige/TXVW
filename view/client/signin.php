@@ -168,7 +168,7 @@
                             </header>
                             
                             <!-- Form -->
-                            <form method="POST" action="/client/pu_auth/login" class="g-py-15">
+                            <form method="POST" action="/client/pu_index/signin" class="g-py-15">
                                 <div class="mb-4">
                                     <div class="input-group g-brd-primary--focus">
                                         <div class="input-group-prepend">

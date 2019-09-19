@@ -94,21 +94,20 @@
             
             <!-- Login -->
              <br/>
-             
-            <?php echo $this->Session->flash(); ?>
-             
+         
             <section class="container g-pt-100 g-pb-20 g-bg-primary--active">
                 <div class="row justify-content-between">
                     <div class="col-md-6 col-lg-5 g-brd-2 u-shadow-v24 flex-md-unordered g-mb-80">
                         <div class="g-brd   g-bg-white--focus rounded g-px-30 g-py-50 mb-4">
                             <header class="text-center mb-4">
+                                  <?php echo $this->Session->flash(); ?>
                                 <h1 class="h3 g-color-black g-font-weight-300 text-capitalize">Signup</h1>
                             </header>
                                 
                             <!-- Form -->
-                            <form class="g-py-15" method="POST" action="/client/pu_auth">
+                            <form class="g-py-15" method="POST" action="/client/pu_index">
                                 <div class="mb-4">
-                                    <input name="nom" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="text" placeholder="ex: John Kah">
+                                    <input name="name" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="text" placeholder="ex: John Kah">
                                 </div>                            
                                 <div class="mb-4">
                                     <input name="email" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="email" placeholder="your mail address">
