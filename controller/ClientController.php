@@ -5,11 +5,8 @@ class ClientController extends Controller {
     
 	public function pu_index($param=NULL){
 	if(isset($this->request->data->action)){
-           
             $var=$this->request->data->action;
-            
             $param=$this->$var($this->request->data);
-           
 	}
         
         
@@ -23,7 +20,7 @@ class ClientController extends Controller {
             $this->render($param,"clientlayout");
         }
         else {
-            $this->render('auth');
+            $this->render('/main/index'); 
         }
         		
     }
@@ -43,8 +40,7 @@ class ClientController extends Controller {
                                     $this->Session->write("clientStatut",$user[0]->statut);
                                     $this->Session->write("clientInfoEmail",$user[0]->email);
                                     $this->Session->setFlash("<h6>Welcome <b>".$user[0]->email."</b> </h6>","success");
-                                    echo 'you are logged';
-                                    $this->render('profil_client','dashboard_client');
+                                    $this->render('client_order','dashboard_client');
                                     die();
                                 }
                                 else
@@ -135,9 +131,19 @@ class ClientController extends Controller {
             unset($_SESSION["clientInfoEmail"]);
             unset($_SESSION["clientInfoID"]);
             unset($_SESSION["clientStatut"]);
-            $this->pu_auth();
+            $this->pu_index('signin');
     }
-
+    
+    
+    public function pu_order(){
+        
+        $this->render('client_order','dashboard_client');
+    }
+    
+    
+    public function pu_save_order(){
+        
+    }
 
     public function pu_message(){       
            if(isset($this->request->data->action))
