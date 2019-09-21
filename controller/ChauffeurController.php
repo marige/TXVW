@@ -44,7 +44,7 @@ class ChauffeurController extends Controller {
                                     $this->Session->write("clientInfoEmail",$user[0]->email);
                                     $this->Session->setFlash("<h6>Welcome <b>".$user[0]->email."</b> </h6>","success");
                                     echo 'you are logged';
-                                    $this->render('profil_client','dashboard_client');
+                                    $this->render('profil_taxi','dashboard_taxi');
                                     die();
                                 }
                                 else
@@ -130,6 +130,11 @@ class ChauffeurController extends Controller {
             }
     }
 
+    public function pu_order(){
+        
+        $this->render('client_order','dashboard_taxi');
+    }
+    
     public function pu_disconnect(){
             $this->Session->disconnect();
             unset($_SESSION["clientInfoEmail"]);
@@ -138,7 +143,7 @@ class ChauffeurController extends Controller {
             $this->pu_auth();
     }
 
-
+    
     public function pu_message(){       
            if(isset($this->request->data->action))
            {
