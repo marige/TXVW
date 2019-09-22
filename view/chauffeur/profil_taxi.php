@@ -150,11 +150,25 @@
              <?php }?>
         </div>
         <div class="col-md-4">
-             <form method="POST" action="" enctype="multipart/form-data">
-                <label class="g-mb-10">Verification de contact </label>
-                <input class="js-file-attachment" type="text" name="">
-                <input class="btn btn-block u-btn-teal g-font-size-default" type="submit" value="Verifier Numero">
+            <?php if($client[0]->verification_adress=='1') {?>
+            <label class="g-mb-10">Verification de Permis </label>
+            <a href="" class="btn btn-xl u-btn-primary g-mr-10 g-mb-15">
+                    <i class="fa fa-check-circle g-mr-5"></i>
+                Permis Validé
+                  </a>
+            <?php }elseif($client[0]->verification_adress=='9') {?>
+            <label class="g-mb-10">Verification du permis </label>
+            <a href="" class="btn btn-xl u-btn-orange g-mr-10 g-mb-15">
+                    <i class="fa fa-clock-o g-mr-5"></i>
+                Document en cours de validation
+                  </a>
+            <?php }else {?>
+            <form method="POST" action="/client/pu_save_document_adress" enctype="multipart/form-data">
+                <label class="g-mb-10">Verification du permis </label>
+                <input class="js-file-attachment" type="file" name="fileToUpload" required>
+                <input class="btn  btn-block u-btn-teal g-font-size-default" type="submit" value="Verifier">
             </form>
+             <?php }?>
         </div>
     </div>
         
