@@ -14,12 +14,6 @@
                             <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" ></option>
                             <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="1">Martinique</option>
                             <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="2">Paris</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="engineering_it">Engineering and IT</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="indigenous">Indigenous</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="medicine_health">Medicine and health</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="natural_sciences">Natural sciences</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="sport">Sport</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="university_general_interest">University and general interest</option>
                         </select>
                             
                     </div>
@@ -39,8 +33,8 @@
                         <label class="g-font-weight-500 g-font-size-15 g-pl-30">CHOOSE YOUR TAXI</label>
                         <select name="idtaxi" class="js-custom-select w-100 u-select-v2 u-shadow-v19 g-brd-none g-color-black g-color-primary--hover g-bg-white text-left g-rounded-30 g-pl-30 g-py-12" data-placeholder="For" data-open-icon="fa fa-angle-down" data-close-icon="fa fa-angle-up">
                             <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" ></option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="alumni_and_friends">5 places</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="current_students">9 places</option>             
+                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="1">5 places</option>
+                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="2">9 places</option>             
                         </select>
                             
                     </div>
@@ -49,12 +43,12 @@
             <div class="col-xl-4 g-mb-30">
                 
                 <label class="g-font-weight-500 g-font-size-15">Select the date</label>
-                <div name="date_choose" id="datepickerInline" class="u-datepicker-v1 u-shadow-v32 g-brd-none rounded"></div>
+                <input name="date_choose" id="datepickerInline" class="u-datepicker-v1 u-shadow-v32 g-brd-none rounded">
                     
             </div>
             <div class="col-sm-12 g-mt-30 g-mb-30">
                         <div class="d-flex">
-                            <button class="btn btn-block u-shadow-v32 g-brd-none g-color-white g-bg-black g-bg-primary--hover g-font-size-16 g-rounded-30 g-py-10 ml-2 g-mt-0" type="button">ORDER</button>
+                            <button class="btn btn-block u-shadow-v32 g-brd-none g-color-white g-bg-black g-bg-primary--hover g-font-size-16 g-rounded-30 g-py-10 ml-2 g-mt-0" type="submit">ORDER</button>
                         </div>
                     </div>
         </form>
