@@ -39,11 +39,8 @@
                         <label class="g-font-weight-500 g-font-size-15 g-pl-30">CHOOSE YOUR TAXI</label>
                         <select name="idtaxi" class="js-custom-select w-100 u-select-v2 u-shadow-v19 g-brd-none g-color-black g-color-primary--hover g-bg-white text-left g-rounded-30 g-pl-30 g-py-12" data-placeholder="For" data-open-icon="fa fa-angle-down" data-close-icon="fa fa-angle-up">
                             <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" ></option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="alumni_and_friends">Alumni and friends</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="current_students">Current students</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="future_students">Future students</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="public">Public</option>
-                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="staff">Staff</option>
+                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="alumni_and_friends">5 places</option>
+                            <option class="g-brd-secondary-light-v2 g-color-black g-color-white--active g-bg-primary--active" value="current_students">9 places</option>             
                         </select>
                             
                     </div>

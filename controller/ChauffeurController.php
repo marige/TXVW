@@ -4,17 +4,14 @@
 class ChauffeurController extends Controller {
     
 	public function pu_index($param=NULL){
-	
-	//$this->loadModel('Client');
-         
+        
 	if(isset($this->request->data->action)){
            
-            $var=$this->request->data->action;
-            
+            $var=$this->request->data->action;      
             $param=$this->$var($this->request->data);         
 	} 
         
-        if(($param=="signin"||$param=="signup"||$param=="reset")&& !isset($_SESSION["clientInfoID"]))
+        if(($param=="signin"||$param=="signup"||$param=="reset")&& !isset($_SESSION["chauffeurInfoID"]))
         {
         //Afficher les fenetres login register... lorsque la personne n'est pas connecté
           //  $this->render($param,"clientlayout");
@@ -29,22 +26,23 @@ class ChauffeurController extends Controller {
         		
     }
     
-
+    
     public function signin($data){       
-        $this->loadModel('Client');
+        $this->loadModel('Chauffeur');
         if(!$this->valideMail($data->email)){
          $this->Session->setFlash("<h6><b>Please write a correct email </b></h6>","danger");
          return "signin";				   
         }
-        $user=$this->Client->authClient($data->email,$data->password);
+        $user=$this->Chauffeur->authChauffeur($data->email,$data->password);
                                 if(isset($user[0])){
-                                    $this->Session->setLogged($user[0]->idclient);
-                                    $this->Session->write("clientInfoID",$user[0]->idclient);
-                                    $this->Session->write("clientStatut",$user[0]->statut);
-                                    $this->Session->write("clientInfoEmail",$user[0]->email);
+                                    $this->Session->setLogged($user[0]->idchauffeur);
+                                    $this->Session->write("chauffeurInfoID",$user[0]->idchauffeur);
+                                     $this->Session->write("chauffeurName",$user[0]->name);
+                                    $this->Session->write("chauffeurStatut",$user[0]->statut);
+                                    $this->Session->write("chauffeurInfoEmail",$user[0]->email);
                                     $this->Session->setFlash("<h6>Welcome <b>".$user[0]->email."</b> </h6>","success");
                                     echo 'you are logged';
-                                    $this->render('profil_client','dashboard_client');
+                                    $this->render('infochauffeur','dashboard_chauffeur');
                                     die();
                                 }
                                 else
@@ -56,8 +54,39 @@ class ChauffeurController extends Controller {
     }
     
 
+    
+    public function updateinfo($data){   
+   
+        $this->loadModel('Chauffeur');
+        if(!isset($data->gender)){
+            $this->Session->setFlash("<h6><b>You need to specify your gender </b></h6>","warning");
+             $this->render('infochauffeur','dashboard_chauffeur');
+        } 
+         if(!isset($data->year)||!isset($data->month)||!isset($data->day)){
+            $this->Session->setFlash("<h6><b>You need to specify your birth date </b></h6>","warning");
+            $this->render('infochauffeur','dashboard_chauffeur');
+        }
+                    
+        $tab4 = array(); 
+        $tab4['datenaissance'] ="'".$data->year.'-'.$data->month.'-'.$data->day."'";
+        $tab4['statut'] ="1";
+        $tab4['licence'] =$data->licence;
+        $tab4['gender'] =$data->gender;
+        $tab4['idchauffeur'] =$data->idchauffeur;
+        $tab4['language'] =$data->language;
+         $tab4['location'] =$data->location;
+        $chauffeurid=$this->Chauffeur->update($tab4);                     
+        if(isset($chauffeurid)&&$chauffeurid==$tab4['idchauffeur']){
+            $this->Session->setFlash("<h6>Profile updated !!!</h6>","info");
+            $this->render('infochauffeur','dashboard_chauffeur');
+          }else{
+            $this->Session->setFlash("<h6><b>Something went wrong, try again please</b></h6>","warning");
+             $this->render('infochauffeur','dashboard_chauffeur');
+        }
+    }
+    
     public function signup($data){   
-        $this->loadModel('Client');
+        $this->loadModel('Chauffeur');
         if (isset($data->password) & ($data->password!=$data->repass)) {
             $this->Session->setFlash("<h6><b>Your password and re-password don't match </b></h6>","warning");
             return "signup";
@@ -65,15 +94,13 @@ class ChauffeurController extends Controller {
         if(!isset($data->name)){
             $this->Session->setFlash("<h6><b>You need to provide a valid name </b></h6>","warning");
             return "signup";
-        }
-            
-        
+        }                 
 	if(!$this->valideMail($data->email)){
          $this->Session->setFlash("<h6><b>Please write a correct email </b></h6>","danger");
          return "signup";			   
         }
         
-        if($this->Client->getValideClient($data->email)){
+        if($this->Chauffeur->getValideClient($data->email)){
             $this->Session->setFlash("<h6><b>The account with $data->email exist. You just need to sign in</b></h6>","warning");
             return "signin";
         }
@@ -83,10 +110,15 @@ class ChauffeurController extends Controller {
         $tab4['name'] =$data->name;
         $tab4['statut'] ="0";
         $tab4['password'] = sha1($data->password);     
-                $clientInfoID=$this->Client->insert($tab4);                     
-        $this->pu_confirme_mail($tab4['email']);
-        $this->Session->setFlash("<h6>You've successful registered !!!\n Please check your mailbo: <b>".$tab4['email']."</b> to activate your account </h6>","info");
-        return "signup";
+        $chauffeurid=$this->Chauffeur->insert($tab4);                     
+        if(isset($chauffeurid)){
+            $this->pu_confirme_mail($tab4['email']);
+            $this->Session->setFlash("<h6>You've successful registered !!!\n Please check your mailbox: <b>".$tab4['email']."</b> to activate your account </h6>","info");
+            return "signup";
+          }else{
+            $this->Session->setFlash("<h6><b>Something went wrong, try again please</b></h6>","warning");
+            return "signin";
+        }
     }
 				
     
