@@ -162,6 +162,11 @@ class ChauffeurController extends Controller {
             }
     }
 
+    public function pu_order(){
+        
+        $this->render('client_order','dashboard_taxi');
+    }
+    
     public function pu_disconnect(){
             $this->Session->disconnect();
             unset($_SESSION["clientInfoEmail"]);
@@ -170,7 +175,7 @@ class ChauffeurController extends Controller {
             $this->pu_auth();
     }
 
-
+    
     public function pu_message(){       
            if(isset($this->request->data->action))
            {

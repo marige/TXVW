@@ -76,7 +76,7 @@ class ClientController extends Controller {
                     
         $tab4 = array(); 
         $tab4['email'] =$data->email;
-        $tab4['name'] =$data->name;
+        $tab4['name'] = $this->secureInput($data->name);
         $tab4['statut'] ="0";
         $tab4['password'] = sha1($data->password);     
                 $clientInfoID=$this->Client->insert($tab4);  
@@ -148,7 +148,15 @@ class ClientController extends Controller {
     
     
     public function pu_save_order(){
-        
+        $this->loadModel('Commande');
+        $tab4 = array(); 
+        $tab4['iddestination']  =$this->secureInput($this->request->data->iddestination);
+        $tab4['iditinerary']    =$this->secureInput($this->request->data->iditinerary);
+        $tab4['idtaxi']         =$this->secureInput($this->request->data->idtaxi);
+        $tab4['date_choose']    =$this->secureInput($this->request->data->date_choose);     
+        $this->Commande->insert($tab4);
+        $this->renderNotif("Order saved Click here ==> ",'success', '/client/pu_order','dashboard_client');
+     
     }
 
     public function pu_message(){       
