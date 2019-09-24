@@ -25,7 +25,7 @@ class ClientController extends Controller {
         		
     }
     
-
+ 
     public function signin($data){       
         $this->loadModel('Client');
         if(!$this->valideMail($data->email)){
