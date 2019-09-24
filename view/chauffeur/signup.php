@@ -105,7 +105,7 @@
                             </header>
                                 
                             <!-- Form -->
-                            <form class="g-py-15" method="POST" action="/client/pu_index">
+                            <form class="g-py-15" method="POST" action="/chauffeur/pu_index">
                                 <div class="mb-4">
                                     <input name="name" class="form-control g-color-black g-bg-white g-bg-white--focus g-brd-gray-light-v4 g-brd-primary--hover rounded g-py-15 g-px-15" type="text" placeholder="ex: John Kah">
                                 </div>                            
@@ -148,7 +148,7 @@
                                    
                                     </div>
                                     <div class="col-4">
-                                        <a class="btn btn-block u-btn-teal g-py-13 mr-2" type="button" href="/client/pu_index/signin">
+                                        <a class="btn btn-block u-btn-teal g-py-13 mr-2" type="button" href="/chauffeur/pu_index/signin">
                                             <i class="mr-1 fa fa-sign-in"></i>
                                             Sign in
                                         </a>

@@ -44,7 +44,7 @@ class Chauffeur extends Model{
             return sha1($email.''.$timing);
     }
     
-    public function authClient($email,$pass){
+    public function authChauffeur($email,$pass){
            return $this->find(array
 		    	('conditions' => 'password ="'.sha1($pass).'" AND email ="'.$email.'"  ') );
 		    

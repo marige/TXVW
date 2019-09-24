@@ -79,10 +79,16 @@ class ClientController extends Controller {
         $tab4['name'] = $this->secureInput($data->name);
         $tab4['statut'] ="0";
         $tab4['password'] = sha1($data->password);     
-                $clientInfoID=$this->Client->insert($tab4);                     
-        $this->pu_confirme_mail($tab4['email']);
-        $this->Session->setFlash("<h6>You've successful registered !!!\n Please check your mailbo: <b>".$tab4['email']."</b> to activate your account </h6>","info");
-        return "signup";
+                $clientInfoID=$this->Client->insert($tab4);  
+        if(isset($clientInfoID)){
+            $this->pu_confirme_mail($tab4['email']);
+            $this->Session->setFlash("<h6>You've successful registered !!!\n Please check your mailbox: <b>".$tab4['email']."</b> to activate your account </h6>","info");
+            return "signup";
+        }else{
+            $this->Session->setFlash("<h6><b>Something went wrong, try again please</b></h6>","warning");
+            return "signin";
+        }
+        
     }
 				
     
