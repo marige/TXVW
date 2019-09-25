@@ -74,31 +74,7 @@
                         </div>
                       </div>
                     </div>
-                    
-                    <div class="row g-mb-20">
-                      <div class="col-md-3 align-self-center g-mb-5 g-mb-0--md">
-                        <label class="mb-0">Driver licence</label>
-                      </div>
-
-                      <div class="col-md-9 align-self-center">
-                        <div class="row g-mx-minus-10">
-                          <div class="col-md-auto align-self-center g-width-180--md g-px-10">
-                            <div class="form-group u-select--v2 g-pos-rel g-brd-gray-light-v7 g-rounded-4 mb-0">
-                              <span class="g-pos-abs g-top-0 g-right-0 d-block g-width-40 h-100 opacity-0 g-opacity-1--success">
-                              <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
-                            </span>
-                              <select class="js-select u-select--v2-select" name="licence" required="required" style="display: none;">                            
-                                <option value="Category B" selected="selected">Category B</option>
-                                <option value="Others">Category C</option>
-                              </select>
-                              <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6 ml-auto g-mr-15"></i>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                    </div>
-                    
+    
                     <div class="row g-mb-20">
                       <div class="col-md-3 align-self-center g-mb-5 g-mb-0--md">
                         <label class="mb-0">Licence</label>

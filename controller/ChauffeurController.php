@@ -352,7 +352,7 @@ class ChauffeurController extends Controller {
                  $datas['type_document'] ='adress';
                  $datas['lib_document']  =$target_file;
                  
-                 $info['idclient']       =$_SESSION['clientInfoID'];
+                 $info['idclient']=$_SESSION['clientInfoID'];
                  $info['verification_adress']=9;
                $this->loadModel('Client_documents');
                $this->loadModel('Client');
