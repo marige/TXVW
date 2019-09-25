@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800">
   <!-- CSS Global Compulsory -->
   <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/bootstrap/bootstrap.min.css">
-   <link rel="stylesheet" href="<?php echo BASE_URL_THEME; ?>assets/vendor/bootstrap/offcanvas.css">
+  <link rel="stylesheet" href="<?php echo BASE_URL_THEME; ?>assets/vendor/bootstrap/offcanvas.css">
   <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/icon-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/icon-line-pro/style.css">
   <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/vendor/icon-hs/style.css">

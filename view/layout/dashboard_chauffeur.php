@@ -40,6 +40,7 @@
 
   <!-- CSS Customization -->
   <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/custom.css">
+  <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/timeline.css">
 </head>
 <body>
     <!-- Header -->
@@ -174,7 +175,7 @@
                         <ul id="subMenu5" class="u-sidebar-navigation-v1-menu u-side-nav--second-level-menu mb-0">
                             <!-- Icons -->
                             <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-                                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/client/pu_liste">
+                                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/chauffeur/pu_listTransaction">
                                     <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
                                         <i class="hs-admin-blackboard"></i>
                                     </span>
@@ -184,7 +185,7 @@
                             <!-- End Icons -->
                             <!-- Icons -->
                             <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-                                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/client/">
+                                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/chauffeur/pu_timeline">
                                     <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
                                         <i class="hs-admin-wallet"></i>
                                     </span>

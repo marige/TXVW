@@ -1,21 +1,17 @@
     
-<link  rel="stylesheet" href="<?php echo  BASE_URL_THEME_UNIFY; ?>vendor/jquery-ui/themes/base/jquery-ui.min.css">
-<link  rel="stylesheet" href="<?php echo  BASE_URL_THEME_UNIFY; ?>vendor/icon-awesome/css/font-awesome.min.css"
->
- 
-<script  src="<?php echo  BASE_URL_THEME_UNIFY; ?>vendor/jquery-ui/jquery-ui.core.min.js"></script>
-<script  src="<?php echo  BASE_URL_THEME_UNIFY; ?>vendor/jquery-ui/ui/widgets/menu.js"></script>
-<script  src="<?php echo  BASE_URL_THEME_UNIFY; ?>vendor/jquery-ui/ui/widgets/mouse.js"></script>
-<script  src="<?php echo  BASE_URL_THEME_UNIFY; ?>vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
-<script  src="<?php echo  BASE_URL_THEME_UNIFY; ?>js/components/hs.autocomplete.js"></script>
+<link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>vendor/jquery-ui/themes/base/jquery-ui.min.css">
+<link  rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>vendor/icon-awesome/css/font-awesome.min.css">
+<script  src="<?php echo  BASE_URL_THEME; ?>vendor/jquery-ui/jquery-ui.core.min.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>vendor/jquery-ui/ui/widgets/menu.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>vendor/jquery-ui/ui/widgets/mouse.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>vendor/jquery-ui/ui/widgets/autocomplete.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>js/components/hs.autocomplete.js"></script>
     
-<script  src="<?php echo  BASE_URL_THEME_UNIFY; ?>vendor/jquery.filer/js/jquery.filer.min.js"></script>
-<script  src="<?php echo  BASE_URL_THEME_UNIFY; ?>js/helpers/hs.focus-state.js"></script>
-<script  src="<?php echo  BASE_URL_THEME_UNIFY; ?>js/components/hs.file-attachement.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>vendor/jquery.filer/js/jquery.filer.min.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>js/helpers/hs.focus-state.js"></script>
+<script  src="<?php echo  BASE_URL_THEME; ?>js/components/hs.file-attachement.js"></script>
     
-    
-    
-    
+        
 <?php echo $this->Session->flash(); ?>
 
     <div class="card g-brd-gray-light-v7 g-rounded-3 g-mb-30">

@@ -13,8 +13,6 @@ class ChauffeurController extends Controller {
         
         if(($param=="signin"||$param=="signup"||$param=="reset")&& !isset($_SESSION["chauffeurInfoID"]))
         {
-        //Afficher les fenetres login register... lorsque la personne n'est pas connecté
-          //  $this->render($param,"clientlayout");
             $this->render($param);
         } 
         elseif ($param=="terms_of_use") {
@@ -26,6 +24,9 @@ class ChauffeurController extends Controller {
         		
     }
     
+    public function pu_timeline(){
+        $this->render("timeline",'dashboard_chauffeur');         
+    }
     
     public function signin($data){       
         $this->loadModel('Chauffeur');
@@ -37,12 +38,17 @@ class ChauffeurController extends Controller {
                                 if(isset($user[0])){
                                     $this->Session->setLogged($user[0]->idchauffeur);
                                     $this->Session->write("chauffeurInfoID",$user[0]->idchauffeur);
-                                     $this->Session->write("chauffeurName",$user[0]->name);
+                                    $this->Session->write("chauffeurName",$user[0]->name);
                                     $this->Session->write("chauffeurStatut",$user[0]->statut);
                                     $this->Session->write("chauffeurInfoEmail",$user[0]->email);
                                     $this->Session->setFlash("<h6>Welcome <b>".$user[0]->email."</b> </h6>","success");
-                                    echo 'you are logged';
-                                    $this->render('infochauffeur','dashboard_chauffeur');
+                                    //get order ongoing
+                                    $this->Session->write("orderon",$this->Chauffeur->getOrderNow($user[0]->idchauffeur));
+                                    if(!$user[0]->statut)
+                                       $this->render('infochauffeur','dashboard_chauffeur');
+                                    else{
+                                       $this->render('transaction','dashboard_chauffeur');   
+                                    }
                                     die();
                                 }
                                 else
@@ -53,10 +59,12 @@ class ChauffeurController extends Controller {
                                 }
     }
     
-
-    
-    public function updateinfo($data){   
-   
+    public function pu_listTransaction(){
+        if(isset($_SESSION["id"]))
+         $this->render("transaction","dashboard_chauffeur");
+    }
+  
+    public function updateinfo($data){      
         $this->loadModel('Chauffeur');
         if(!isset($data->gender)){
             $this->Session->setFlash("<h6><b>You need to specify your gender </b></h6>","warning");

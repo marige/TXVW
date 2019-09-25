@@ -1,5 +1,8 @@
 
-  <main>
+
+
+
+<main>
 
     <section class="container-fluid px-0 g-pt-65">
       <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
@@ -7,7 +10,7 @@
         <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
           <div class="g-pa-20">
                      
-                 <?php echo $this->Session->flash(); ?>
+               
               
             <div class="row">
               <div class="col-md-3 g-mb-30 g-mb-0--md">
@@ -391,9 +394,7 @@
                           </div>
                         </div>
                       </div>
-                    </div>
-
-                 
+                    </div>                 
                     <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-30--md">
 
 
@@ -412,4 +413,4 @@
       </div>
     </section>
   </main>
-
+ 

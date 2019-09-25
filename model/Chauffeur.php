@@ -13,6 +13,9 @@
  */
 class Chauffeur extends Model{
     
+    public function getOrderNow($idchauffeur){
+        return $this->findWithRequest("select * from commande where idchauffeur=".$idchauffeur)[0];
+    }
     public function getValideClient($email){
             $client= $this->find(array(
                 'conditions'=> 'email ="'.$email.'" AND statut >=0 '));
