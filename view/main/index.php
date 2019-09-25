@@ -48,67 +48,7 @@
   <main>
 
  <!-- Header -->
-    <header id="js-header" class="u-header u-header--static--lg u-header--show-hide--lg u-header--change-appearance--lg" data-header-fix-moment="500" data-header-fix-effect="slide">
-      <div class="u-header__section u-header__section--light g-bg-white g-transition-0_3 g-py-10" data-header-fix-moment-exclude="g-bg-white g-py-10" data-header-fix-moment-classes="g-bg-white-opacity-0_7 u-shadow-v18 g-py-0">
-        <nav class="js-mega-menu navbar navbar-expand-lg">
-          <div class="container">
-            <!-- Responsive Toggle Button -->
-            <button class="navbar-toggler navbar-toggler-right btn g-line-height-1 g-brd-none g-pa-0 g-pos-abs g-top-3 g-right-0" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
-              <span class="hamburger hamburger--slider">
-            <span class="hamburger-box">
-              <span class="hamburger-inner"></span>
-              </span>
-              </span>
-            </button>
-            <!-- End Responsive Toggle Button -->
-
-            <!-- Logo -->
-             <a href="index.html" class="navbar-brand">
-                                <img id="logo_img" style="height:60px" class="img-responsive" src="<?php echo  BASE_URL_THEME; ?>assets/img/logo.png" alt="TAXI AT THE PEER">
-                                TAXI AT THE PIER
-                            </a>
-            <!-- End Logo -->
-
-            <!-- Navigation -->
-            <div class="collapse navbar-collapse align-items-center flex-sm-row g-pt-10 g-pt-5--lg" id="navBar">
-              <ul class="navbar-nav ml-auto text-uppercase g-font-weight-600 u-main-nav-v2 u-sub-menu-v2">
-                <li class="nav-item g-mx-2--md g-mx-5--xl g-mb-5 g-mb-0--lg">
-                  <a href="#" class="nav-link">Home
-                
-              </a>
-                </li>
-                <li class="nav-item hs-has-sub-menu g-mx-2--md g-mx-5--xl g-mb-5 g-mb-0--lg">
-                  <a href="#" class="nav-link" id="nav-link-1" aria-haspopup="true" aria-expanded="false" aria-controls="nav-submenu-1">Services
-                
-              </a>
-                  <!-- Submenu -->
-                  <ul class="hs-sub-menu list-unstyled g-mt-17--lg g-mt-7--lg--scrolling" id="nav-submenu-1" aria-labelledby="nav-link-1">
-                    <li><a href="#">Service 1</a>
-                    </li>
-                    
-
-                  </ul>
-                  <!-- End Submenu -->
-                </li>
-                
-                <li class="nav-item g-mx-2--md g-mx-5--xl g-mb-5 g-mb-0--lg active">
-                  <a href="#" class="nav-link">Contact Us
-                <span class="sr-only">(current)</span>
-              </a>
-                </li>
-                
-                <li class="nav-item g-mx-2--md g-mx-5--xl g-mb-5 g-mb-0--lg">
-                  <a href="#" class="nav-link">About
-                
-              </a>
-                </li>
-              </ul>
-            </div>
-            <!-- End Navigation -->
-          </div>
-        </nav>
-      </div>
-    </header>
+    <?php require_once 'header.php'; ?>
     <!-- End Header -->
     <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="particle-effect-one5" data-source="gallery" style="background:#eef0f1;padding:0px;">
         <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
@@ -237,19 +177,17 @@
     </a>
 
   <div class="u-outer-spaces-helper"></div>
-
-    
-  <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.select.js"></script>
-
-<script >
+  <script >
               $(document).ready(function () {
                 // initialization of custom select
                 $.HSCore.components.HSSelect.init('.js-custom-select');
 
                
               });
-            </script>
-            
+   </script>
+    
+  <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.select.js"></script>
+
 
   <!-- JS Global Compulsory -->
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery/jquery.min.js"></script>
@@ -266,7 +204,7 @@
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/vendor/dzsparallaxer/dzsscroller/scroller.js"></script>
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/vendor/dzsparallaxer/advancedscroller/plugin.js"></script>
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/vendor/fancybox/jquery.fancybox.min.js"></script>
-
+ 
   <!-- JS Unify -->
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/hs.core.js"></script>
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.header.js"></script>
@@ -276,7 +214,10 @@
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.rating.js"></script>
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.popup.js"></script>
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.go-to.js"></script>
-
+  <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.dropdown.js"></script>
+  <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.scrollbar.js"></script>
+  <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.carousel.js"></script>
+  <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.go-to.js"></script>
   <!-- JS Customization -->
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/custom.js"></script>
 
@@ -300,16 +241,56 @@
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/vendor/chosen/chosen.jquery.js"></script>
 <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/widgets/datepicker.js"></script>
 <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.datepicker.js"></script>
-<script>
- $(document).ready(function () {
- // initialization of forms
-                $.HSCore.components.HSDatepicker.init('#datepickerInline');
-              });
-            </script>
             
   <!-- JS Custom -->
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/custom.js"></script>
 
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of popups
+      $.HSCore.components.HSPopup.init('.js-fancybox');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+  </script>
+  
+  <script>
+    $(document).on('ready', function () {
+        $("#btnprocess").click(function(){
+        window.location.replace("https://vw.izichange.com/main/pu_process");
+                });
+      
+    });
+  </script>
+  
+  
   <!-- JS Plugins Init. -->
   <script>
     var tpj = jQuery;
@@ -419,84 +400,6 @@
       RsParticlesAddOn(revapi4);
     });
   </script>
-
-
-
-  <!-- JS Plugins Init. -->
-  <script>
-    $(document).on('ready', function () {
-        // initialization of tabs
-        $.HSCore.components.HSTabs.init('[role="tablist"]');
-
-        // initialization of go to
-        $.HSCore.components.HSGoTo.init('.js-go-to');
-
-        // initialization of counters
-        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
-
-        // initialization of popups
-        $.HSCore.components.HSPopup.init('.js-fancybox', {
-          transitionEffect: false
-        });
-
-        // initialization of rating
-        $.HSCore.components.HSRating.init($('.js-rating'), {
-          spacing: 2
-        });
-      });
-
-      $(window).on('load', function () {
-        // initialization of header
-        $.HSCore.components.HSHeader.init($('#js-header'));
-        $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-        // initialization of HSMegaMenu component
-        $('.js-mega-menu').HSMegaMenu({
-          event: 'hover',
-          pageContainer: $('.container'),
-          breakpoint: 991
-        });
-      });
-
-      $(window).on('resize', function () {
-        setTimeout(function () {
-          $.HSCore.components.HSTabs.init('[role="tablist"]');
-        }, 200);
-      });
-  </script>
-
-<!-- JS Plugins Init. -->
-  <script>
-    $(document).on('ready', function () {
-          $( "#btnprocess" ).click(function() {
-           window.location.replace("https://vw.izichange.com/main/pu_process");
-                });
-      // initialization of carousel
-      $.HSCore.components.HSCarousel.init('.js-carousel');
-
-      // initialization of masonry
-      $('.masonry-grid').imagesLoaded().then(function () {
-        $('.masonry-grid').masonry({
-          columnWidth: '.masonry-grid-sizer',
-          itemSelector: '.masonry-grid-item',
-          percentPosition: true
-        });
-      });
-
-      // Header
-      $.HSCore.components.HSHeader.init($('#js-header'));
-      $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-      // Initialization of HSMegaMenu plugin
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 991
-      });
-    });
-              
-  </script>
-
 
  </main>
 </body>
