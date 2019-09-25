@@ -91,76 +91,9 @@
 </div>
     
     
+  
     
-    
-
-    
-  <header class="u-heading-v2-3--bottom g-brd-primary g-mb-20">
-    <h2 class="h3 u-heading-v2__title text-uppercase g-font-weight-300 mb-0">Validation des informations</h2>
-</header>  
-    
-    
-<div class="g-brd-around g-brd-gray-light-v4 g-pa-30 g-mb-30">
-        
-    <div class="form-group row mb-0">
-        <div class="col-md-4">
-              <?php if($client[0]->verification_id=='1') {?>
-            <label class="g-mb-10">Verification d'identité </label>
-            <a href="" class="btn btn-xl u-btn-teal g-mr-10 g-mb-15">
-                    <i class="fa fa-check-circle g-mr-5"></i>
-                Identité Validé
-                  </a>
-            <?php }elseif($client[0]->verification_id=='9') {?>
-            <label class="g-mb-10">Verification d'identité </label>
-            <a href="" class="btn btn-xl u-btn-orange g-mr-10 g-mb-15">
-                    <i class="fa fa-clock-o g-mr-5"></i>
-                Document en cours de validation
-                  </a>
-            <?php }else {?>
-            <form method="POST" action="/client/pu_save_document_id" enctype="multipart/form-data">
-                <label class="g-mb-10">Verification d'identité </label>
-                <input class="js-file-attachment" type="file" name="fileToUpload" required>
-                <input class="btn  btn-block u-btn-teal g-font-size-default" type="submit" value="Verifier">
-            </form>
-            <div>
-                Liste des pièces acceptées:
-            </div>
-            <?php }?>
-            
-        </div>
-        <div class="col-md-4">
-            <?php if($client[0]->verification_adress=='1') {?>
-            <label class="g-mb-10">Verification d'adresse </label>
-            <a href="" class="btn btn-xl u-btn-primary g-mr-10 g-mb-15">
-                    <i class="fa fa-check-circle g-mr-5"></i>
-                Adresse Validé
-                  </a>
-            <?php }elseif($client[0]->verification_adress=='9') {?>
-            <label class="g-mb-10">Verification d'adresse </label>
-            <a href="" class="btn btn-xl u-btn-orange g-mr-10 g-mb-15">
-                    <i class="fa fa-clock-o g-mr-5"></i>
-                Document en cours de validation
-                  </a>
-            <?php }else {?>
-            <form method="POST" action="/client/pu_save_document_adress" enctype="multipart/form-data">
-                <label class="g-mb-10">Verification d'adresse </label>
-                <input class="js-file-attachment" type="file" name="fileToUpload" required>
-                <input class="btn  btn-block u-btn-teal g-font-size-default" type="submit" value="Verifier">
-            </form>
-             <?php }?>
-        </div>
-        <div class="col-md-4">
-             <form method="POST" action="" enctype="multipart/form-data">
-                <label class="g-mb-10">Verification de contact </label>
-                <input class="js-file-attachment" type="text" name="">
-                <input class="btn btn-block u-btn-teal g-font-size-default" type="submit" value="Verifier Numero">
-            </form>
-        </div>
-    </div>
-        
-    
-</div>
-<div class="shortcode-scripts">
+<div >
     
     <script >
         $(document).on('ready', function () {
@@ -170,4 +103,4 @@
         });
     </script>
 </div>
-    
+     

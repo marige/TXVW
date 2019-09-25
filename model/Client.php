@@ -6,11 +6,7 @@
  * and open the template in the editor.
  */
 
-/**
- * Description of Client
- *
- * @author OBAM
- */
+
 class Client extends Model{
     public function getValideClient($email){
             $client= $this->find(array(

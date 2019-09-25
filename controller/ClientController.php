@@ -155,7 +155,9 @@ class ClientController extends Controller {
         $tab4['idtaxi']         =$this->secureInput($this->request->data->idtaxi);
         $tab4['date_choose']    =$this->secureInput($this->request->data->date_choose);     
         $this->Commande->insert($tab4);
-        $this->renderNotif("Order saved Click here ==> ",'success', '/client/pu_order','dashboard_client');
+        $this->Session->setFlash("<h6>Order saved <b></b></h6>","success");
+           
+        $this->render('client_order','dashboard_client');
      
     }
 
@@ -390,6 +392,17 @@ class ClientController extends Controller {
         $this->render('profil_client','dashboard_client');
     }
     
+    public function pu_view_profil(){
+       // $this->isClientLevelOne();
+        
+        if(!isset($this->Client)){
+       // $this->loadModel('Client');
+        }
+        
+       // $this->set("client",$this->Client->getClient($_SESSION['clientInfoID']));
+        $this->render('infoclient','dashboard_client');
+    }
+    
     
     
     public function isClientConnected(){
@@ -448,20 +461,20 @@ class ClientController extends Controller {
         $this->Session->setFlash("<h6><b>You've succesfull  registered </b> check your mailbox to activate your account</h6>","success");
          
     }
-    
-    
+  
     private function send_mail_validation($idClient,$code,$email){
-        $textMail="Une demande de validation Mail de votre compte a été lancé."
+        $textMail="A request to reset your account password has been started."
                     . "<br/>"
-                    . "<br/> Pour confirmer votre mail , veuillez  :"
+                    . "<br/> If the request comes from you, please :"
                     . ""
                     . " <a href='https://".DOMAINE."/client/pu_confirme_mail_validation/".$idClient."/".$code."' > Cliquer ICI </a> "
-                    . "<br/><br/> ou coller ce lien : https://".DOMAINE."/client/pu_confirme_mail_validation/".$idClient."/".$code
+                    . "<br/><br/> "
+                    . "or paste this link : https://".DOMAINE."/client/pu_confirme_mail_validation/".$idClient."/".$code
                     . ""
-                    . '<br/> dans votre navigateur.'
-                    . "<br/> Le lien est valide pour une duree d'une heure !."
+                    . '<br/> '
+                    . "<br/> The link is valid for one hour."
                     . "<br/>"
-                    . "<br/> Si cela ne vient pas de vous , veuillez ignorer ce message."
+                    . "<br/> If this does not come from you, please ignore this message."
                     . "<br/> https://".DOMAINE
                     . "<br/>Admin TAXI AT THE PIER";
         $emailArray=array($email => '');
