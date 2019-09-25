@@ -150,6 +150,7 @@ class ClientController extends Controller {
     public function pu_save_order(){
         $this->loadModel('Commande');
         $tab4 = array(); 
+        $tab4['iddestination']  =$_SESSION['clientInfoID'];
         $tab4['iddestination']  =$this->secureInput($this->request->data->iddestination);
         $tab4['iditinerary']    =$this->secureInput($this->request->data->iditinerary);
         $tab4['idtaxi']         =$this->secureInput($this->request->data->idtaxi);
@@ -244,10 +245,10 @@ class ClientController extends Controller {
     
     
     public function pu_liste(){
-        $this->loadModel('Operations');
+        $this->loadModel('Commande');
         
         $this->isClientLevelOne();
-        $this->set('operations_client',$this->Operations->getClientTransactions());
+        $this->set('operations_client',$this->Commande->getClientTransactions());
         $this->render('historique','layout'); 
     }
     
