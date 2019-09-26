@@ -3,15 +3,14 @@
 
 class ChauffeurController extends Controller {
     
-	public function pu_index($param=NULL){
-        
+    public function pu_index($param=NULL){        
 	if(isset($this->request->data->action)){
-           
-            $var=$this->request->data->action;      
-            $param=$this->$var($this->request->data);         
-	} 
+            $var=$this->request->data->action;
+            $param=$this->$var($this->request->data);
+	}
         
-        if(($param=="signin"||$param=="signup"||$param=="reset")&& !isset($_SESSION["chauffeurInfoID"]))
+        
+        if(($param=="signin"||$param=="signup"||$param=="reset")&& !isset($_SESSION["clientInfoID"]))
         {
             $this->render($param);
         } 
@@ -19,7 +18,7 @@ class ChauffeurController extends Controller {
             $this->render($param,"clientlayout");
         }
         else {
-            $this->render('index');
+            $this->render('/main/index'); 
         }
         		
     }
@@ -44,8 +43,8 @@ class ChauffeurController extends Controller {
                                     $this->Session->setFlash("<h6>Welcome <b>".$user[0]->email."</b> </h6>","success");
                                     //get order ongoing
                                     $this->Session->write("orderon",$this->Chauffeur->getOrderNow($user[0]->idchauffeur));
-                                    if(!$user[0]->statut)
-                                       $this->render('infochauffeur','dashboard_chauffeur');
+                                    if(!$user[0]->statut){                                       
+                                        $this->render('infochauffeur','dashboard_chauffeur');}
                                     else{
                                        $this->render('transaction','dashboard_chauffeur');   
                                     }
@@ -180,7 +179,7 @@ class ChauffeurController extends Controller {
             unset($_SESSION["clientInfoEmail"]);
             unset($_SESSION["clientInfoID"]);
             unset($_SESSION["clientStatut"]);
-            $this->pu_auth();
+            $this->pu_index();
     }
 
     
@@ -404,15 +403,10 @@ class ChauffeurController extends Controller {
          $this->render('listfieul','layout'); 
     }
     
-    public function pu_profil(){
-       // $this->isClientLevelOne();
-        
-        if(!isset($this->Client)){
-       // $this->loadModel('Client');
+    public function pu_profil(){    
+        if(isset($_SESSION["id"])){   
+            $this->render('infochauffeur','dashboard_chauffeur');           
         }
-        
-       // $this->set("client",$this->Client->getClient($_SESSION['clientInfoID']));
-        $this->render('profil_client','dashboard_client');
     }
     
     

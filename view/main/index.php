@@ -172,18 +172,18 @@
     <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{
      "bottom": 15,
      "right": 15
-   }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+      }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
       <i class="hs-icon hs-icon-arrow-top"></i>
     </a>
 
   <div class="u-outer-spaces-helper"></div>
   <script >
-              $(document).ready(function () {
-                // initialization of custom select
-                $.HSCore.components.HSSelect.init('.js-custom-select');
+        $(document).ready(function () {
+          // initialization of custom select
+          $.HSCore.components.HSSelect.init('.js-custom-select');
 
-               
-              });
+
+        });
    </script>
     
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.select.js"></script>
@@ -245,56 +245,23 @@
   <!-- JS Custom -->
   <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/custom.js"></script>
 
-  <!-- JS Plugins Init. -->
-  <script>
-    $(document).on('ready', function () {
-      // initialization of go to
-      $.HSCore.components.HSGoTo.init('.js-go-to');
+    <!-- JS form -->
+  <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/vendor/chosen/chosen.jquery.js"></script>
+<script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-ui/ui/widgets/datepicker.js"></script>
+<script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.datepicker.js"></script>
+<script>
+ $(document).ready(function () {
+ // initialization of forms
+                $.HSCore.components.HSDatepicker.init('#datepickerInline');
+              });
+            </script>
+            
+  <!-- JS Custom -->
+  <script type="text/javascript" src="<?php echo  BASE_URL_THEME; ?>assets/js/custom.js"></script>
 
-      // initialization of carousel
-      $.HSCore.components.HSCarousel.init('.js-carousel');
-
-      // initialization of masonry
-      $('.masonry-grid').imagesLoaded().then(function () {
-        $('.masonry-grid').masonry({
-          columnWidth: '.masonry-grid-sizer',
-          itemSelector: '.masonry-grid-item',
-          percentPosition: true
-        });
-      });
-
-      // initialization of popups
-      $.HSCore.components.HSPopup.init('.js-fancybox');
-    });
-
-    $(window).on('load', function () {
-      // initialization of header
-      $.HSCore.components.HSHeader.init($('#js-header'));
-      $.HSCore.helpers.HSHamburgers.init('.hamburger');
-
-      // initialization of HSMegaMenu component
-      $('.js-mega-menu').HSMegaMenu({
-        event: 'hover',
-        pageContainer: $('.container'),
-        breakpoint: 991
-      });
-    });
-  </script>
-  
-  <script>
-    $(document).on('ready', function () {
-        $("#btnprocess").click(function(){
-        window.location.replace("https://vw.izichange.com/main/pu_process");
-                });
-      
-    });
-  </script>
-  
-  
   <!-- JS Plugins Init. -->
   <script>
     var tpj = jQuery;
-
     var revapi4;
     tpj(document).ready(function () {
       if (tpj("#rev_slider_4_1").revolution == undefined) {
@@ -396,8 +363,109 @@
           }
         });
       }
-
       RsParticlesAddOn(revapi4);
+    });
+  </script>
+
+
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+        // initialization of tabs
+        $.HSCore.components.HSTabs.init('[role="tablist"]');
+        // initialization of go to
+        $.HSCore.components.HSGoTo.init('.js-go-to');
+        // initialization of counters
+        var counters = $.HSCore.components.HSCounter.init('[class*="js-counter"]');
+        // initialization of popups
+        $.HSCore.components.HSPopup.init('.js-fancybox', {
+          transitionEffect: false
+        });
+        // initialization of rating
+        $.HSCore.components.HSRating.init($('.js-rating'), {
+          spacing: 2
+        });
+      });
+      $(window).on('load', function () {
+        // initialization of header
+        $.HSCore.components.HSHeader.init($('#js-header'));
+        $.HSCore.helpers.HSHamburgers.init('.hamburger');
+        // initialization of HSMegaMenu component
+        $('.js-mega-menu').HSMegaMenu({
+          event: 'hover',
+          pageContainer: $('.container'),
+          breakpoint: 991
+        });
+      });
+      $(window).on('resize', function () {
+        setTimeout(function () {
+          $.HSCore.components.HSTabs.init('[role="tablist"]');
+        }, 200);
+      });
+  </script>
+
+<!-- JS Plugins Init. -->
+  <script>
+    $(document).on('ready', function () {
+          $( "#btnprocess" ).click(function() {
+           window.location.replace("https://vw.izichange.com/main/pu_process");
+                });
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+      // Header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+      // Initialization of HSMegaMenu plugin
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
+    });
+              
+  </script>
+  
+   <script>
+    $(document).on('ready', function () {
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+
+      // initialization of carousel
+      $.HSCore.components.HSCarousel.init('.js-carousel');
+
+      // initialization of masonry
+      $('.masonry-grid').imagesLoaded().then(function () {
+        $('.masonry-grid').masonry({
+          columnWidth: '.masonry-grid-sizer',
+          itemSelector: '.masonry-grid-item',
+          percentPosition: true
+        });
+      });
+
+      // initialization of popups
+      $.HSCore.components.HSPopup.init('.js-fancybox');
+    });
+
+    $(window).on('load', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#js-header'));
+      $.HSCore.helpers.HSHamburgers.init('.hamburger');
+
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991
+      });
     });
   </script>
 

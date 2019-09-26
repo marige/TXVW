@@ -1,9 +1,4 @@
 
-
-
-
-<main>
-
     <section class="container-fluid px-0 g-pt-65">
       <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
         <!-- Sidebar Nav -->
@@ -395,11 +390,29 @@
                         </div>
                       </div>
                     </div>                 
-                    <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-30--md">
+                 
 
 
-                    <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-30--md">
+                    <hr class="d-flex g-my-15 g-my-30--md">
 
+                    <div class="g-pos-rel h-100 g-rounded-4 g-pa-15 g-pa-30--md">
+                        <header>
+                            <h2 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black mb-0">Your full size photo</h2>
+                        </header>
+                        <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-25--md">
+              
+                            <div class="form-group">
+                                 <form>
+                                <div class="jFiler">
+                                    <input class="js-file-attachment" type="file" name="fileAttachment[]">
+                                    <div class="g-parent g-pos-rel g-height-230 g-bg-gray-light-v8--hover g-brd-around g-brd-style-dashed g-brd-gray-light-v7 g-brd-lightblue-v3--hover g-rounded-4 g-transition-0_2 g-transition--ease-in g-pa-15 g-pa-30--md g-mb-60">              <div class="d-md-flex align-items-center g-absolute-centered--md w-100 g-width-auto--md">                <div>                  <div class="g-pos-rel g-width-80 g-width-100--lg g-height-80 g-height-100--lg g-bg-gray-light-v8 g-bg-white--parent-hover rounded-circle g-mb-20 g-mb-0--md g-transition-0_2 g-transition--ease-in mx-auto mx-0--md">                    <i class="hs-admin-cloud-up g-absolute-centered g-font-size-30 g-font-size-36--lg g-color-lightblue-v3"></i>                  </div>                </div>                <div class="text-center text-md-left g-ml-20--md">                  <h3 class="g-font-weight-400 g-font-size-16 g-color-black g-mb-10">Upload Your Files</h3>                  <p class="g-font-weight-300 g-color-gray-dark-v6 mb-0">Drag your files here or click upload button and browse from your computer.</p>                </div>              </div>            </div></div>
+                                 </form>
+                            </div>
+                      
+                    </div>
+                        
+                    
+                    
                     <div>
                       <button class="btn btn-md btn-xl--md u-btn-secondary g-width-160--md g-font-size-12 g-font-size-default--md g-mb-10" name="action" value="updateinfo" type="submit">Save Changes</button>
                       <button class="btn btn-md btn-xl--md u-btn-outline-gray-dark-v6 g-font-size-12 g-font-size-default--md g-mr-10 g-mb-10" type="reset">Cancel</button>
@@ -412,5 +425,5 @@
         </div>
       </div>
     </section>
-  </main>
+  
  

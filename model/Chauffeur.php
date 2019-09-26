@@ -1,21 +1,11 @@
 <?php
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * Description of Client
- *
- * @author OBAM
- */
 class Chauffeur extends Model{
     
     public function getOrderNow($idchauffeur){
         return $this->findWithRequest("select * from commande where idchauffeur=".$idchauffeur)[0];
     }
+    
     public function getValideClient($email){
             $client= $this->find(array(
                 'conditions'=> 'email ="'.$email.'" AND statut >=0 '));
@@ -24,7 +14,7 @@ class Chauffeur extends Model{
                 return $client[0]->idclient;
             }
             return 0;
-        }
+    }
     
     public function getClientByMail($email){
             $client= $this->find(array(
@@ -52,5 +42,4 @@ class Chauffeur extends Model{
 		    	('conditions' => 'password ="'.sha1($pass).'" AND email ="'.$email.'"  ') );
 		    
     }
-    //put your code here
 }

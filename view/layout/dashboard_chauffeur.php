@@ -119,7 +119,7 @@
                                     </a>
                                 </li>
                                 <li class="g-mb-10">
-                                    <a class="media g-color-black g-py-5 g-px-20" href="/client/pu_profil">
+                                    <a class="media g-color-black g-py-5 g-px-20" href="/chauffeur/pu_profil">
                                         <span class="d-flex align-self-center g-mr-12">
                                             <i class="hs-admin-user"></i>
                                         </span>
@@ -128,7 +128,7 @@
                                 </li>
                                 
                                 <li class="mb-0">
-                                    <a class="media g-color-primary--hover g-py-5 g-px-20" href="/client/pu_disconnect">
+                                    <a class="media g-color-primary--hover g-py-5 g-px-20" href="/chauffeur/pu_disconnect">
                                         <span class="d-flex align-self-center g-mr-12">
                                             <i class="hs-admin-shift-right"></i>
                                         </span>
@@ -212,7 +212,60 @@
             </div>
             <!-- End Sidebar Nav -->
             
-  <!-- JS Global Compulsory -->
+ 
+
+  <!-- JS Plugins Init. -->
+  
+            
+            <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
+                <div class="g-pa-20">
+                 <?php  echo $content_for_layout;  ?>
+                </div>
+                
+                <!-- Footer -->
+                <footer id="footer" class="u-footer--bottom-sticky g-bg-white g-color-gray-dark-v6 g-brd-top g-brd-gray-light-v7 g-pa-20">
+                    <div class="row align-items-center">
+                       
+                        <!-- Footer Socials -->
+                        <div class="col-md-4 g-mb-10 g-mb-0--md">
+                            <ul class="list-inline g-font-size-16 text-center mb-0">
+                                <li class="list-inline-item g-mx-10">
+                                    <a href="#" class="g-color-facebook g-color-secondary--hover">
+                                        <i class="fa fa-facebook-square"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item g-mx-10">
+                                    <a href="#" class="g-color-google-plus g-color-secondary--hover">
+                                        <i class="fa fa-google-plus"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item g-mx-10">
+                                    <a href="#" class="g-color-black g-color-secondary--hover">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item g-mx-10">
+                                    <a href="#" class="g-color-twitter g-color-secondary--hover">
+                                        <i class="fa fa-twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- End Footer Socials -->
+                        
+                        <!-- Footer Copyrights -->
+                        <div class="col-md-4 text-center text-md-right">
+                            <small class="d-block g-font-size-default">&copy; 2019 TAXI AT THE PIER. All Rights Reserved.</small>
+                        </div>
+                        <!-- End Footer Copyrights -->
+                    </div>
+                </footer>
+                <!-- End Footer -->
+            </div>
+        </div>
+    </main>
+
+     <!-- JS Global Compulsory -->
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery/jquery.min.js"></script>
   
   <script src="<?php echo  BASE_URL_THEME; ?>assets/vendor/jquery-migrate/jquery-migrate.min.js"></script>
@@ -258,12 +311,11 @@
   <script src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.bar-chart.js"></script>
   <script src="<?php echo  BASE_URL_THEME; ?>assets/js/helpers/hs.focus-state.js"></script>
   <script src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.popup.js"></script>
-
+<script src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.file-attachement.js"></script>
   <!-- JS Custom -->
   <script src="<?php echo  BASE_URL_THEME; ?>assets/js/custom.js"></script>
-
-  <!-- JS Plugins Init. -->
-  <script>
+  
+<script>
     $(document).on('ready', function () {
       // initialization of custom select
       $('.js-select').selectpicker();
@@ -285,68 +337,24 @@
           }, 400);
         }
       });
-
-      
+  
 
       // initialization of HSDropdown component
       $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {dropdownHideOnScroll: false});
 
       // initialization of custom scrollbar
       $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
+      
+       // initialization of forms
+      $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
+      
+      
 
      
     });
   </script>
-            
-            <div class="col g-ml-45 g-ml-0--lg g-pb-65--md">
-                <div class="g-pa-20">
-         <?php  echo $content_for_layout;  ?>
-                </div>
-                
-                <!-- Footer -->
-                <footer id="footer" class="u-footer--bottom-sticky g-bg-white g-color-gray-dark-v6 g-brd-top g-brd-gray-light-v7 g-pa-20">
-                    <div class="row align-items-center">
-                       
-                        <!-- Footer Socials -->
-                        <div class="col-md-4 g-mb-10 g-mb-0--md">
-                            <ul class="list-inline g-font-size-16 text-center mb-0">
-                                <li class="list-inline-item g-mx-10">
-                                    <a href="#" class="g-color-facebook g-color-secondary--hover">
-                                        <i class="fa fa-facebook-square"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item g-mx-10">
-                                    <a href="#" class="g-color-google-plus g-color-secondary--hover">
-                                        <i class="fa fa-google-plus"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item g-mx-10">
-                                    <a href="#" class="g-color-black g-color-secondary--hover">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                                </li>
-                                <li class="list-inline-item g-mx-10">
-                                    <a href="#" class="g-color-twitter g-color-secondary--hover">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- End Footer Socials -->
-                        
-                        <!-- Footer Copyrights -->
-                        <div class="col-md-4 text-center text-md-right">
-                            <small class="d-block g-font-size-default">&copy; 2019 TAXI AT THE PIER. All Rights Reserved.</small>
-                        </div>
-                        <!-- End Footer Copyrights -->
-                    </div>
-                </footer>
-                <!-- End Footer -->
-            </div>
-        </div>
-    </main>
-    
-
+  
+  
 </body>
 
 </html>
