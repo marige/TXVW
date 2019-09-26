@@ -9,7 +9,7 @@
 class Commande extends Model{
     public function getClientTransactions($idClient){
       $sql="select  FROM commande          
-                WHERE commande.client_id ='".$_SESSION['clientInfoID']."'              
+                WHERE commande.client_id ='".$idClient."'              
                  ";
      return $this->findWithRequest($sql);
     }

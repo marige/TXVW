@@ -142,24 +142,28 @@ class ClientController extends Controller {
     
     
     public function pu_order(){
-        
         $this->render('client_order','dashboard_client');
     }
     
     
     public function pu_save_order(){
-        $this->loadModel('Commande');
-        $tab4 = array(); 
-        $tab4['iddestination']  =$_SESSION['clientInfoID'];
-        $tab4['iddestination']  =$this->secureInput($this->request->data->iddestination);
-        $tab4['iditinerary']    =$this->secureInput($this->request->data->iditinerary);
-        $tab4['idtaxi']         =$this->secureInput($this->request->data->idtaxi);
-        $tab4['date_choose']    =$this->secureInput($this->request->data->date_choose);     
-        $this->Commande->insert($tab4);
-        $this->Session->setFlash("<h6>Order saved <b></b></h6>","success");
-           
+        if (isset($this->request->data->iddestination)){
+            $this->loadModel('Commande');
+            $tab4 = array(); 
+            $tab4['iddestination']  =$_SESSION['clientInfoID'];
+            $tab4['iddestination']  =$this->secureInput($this->request->data->iddestination);
+            $tab4['iditinerary']    =$this->secureInput($this->request->data->iditinerary);
+            $tab4['idtaxi']         =$this->secureInput($this->request->data->idtaxi);
+            $tab4['date_choose']    =$this->secureInput($this->request->data->date_choose);     
+            $this->Commande->insert($tab4);
+            $this->Session->setFlash("<h6>Order saved <b></b></h6>","success");
+        }
         $this->render('client_order','dashboard_client');
-     
+    }
+
+    
+    public function commande_state(){
+        
     }
 
     public function pu_message(){       
@@ -248,7 +252,7 @@ class ClientController extends Controller {
         $this->loadModel('Commande');
         
         $this->isClientLevelOne();
-        $this->set('operations_client',$this->Commande->getClientTransactions());
+        $this->set('operations_client',$this->Commande->getClientTransactions($_SESSION['clientInfoID']));
         $this->render('historique','layout'); 
     }
     
