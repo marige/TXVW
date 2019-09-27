@@ -150,13 +150,14 @@ class ClientController extends Controller {
         if (isset($this->request->data->iddestination)){
             $this->loadModel('Commande');
             $tab4 = array(); 
-            $tab4['iddestination']  =$_SESSION['clientInfoID'];
+            $tab4['idclient']  =$_SESSION['clientInfoID'];
             $tab4['iddestination']  =$this->secureInput($this->request->data->iddestination);
             $tab4['iditinerary']    =$this->secureInput($this->request->data->iditinerary);
             $tab4['idtaxi']         =$this->secureInput($this->request->data->idtaxi);
             $tab4['date_choose']    =$this->secureInput($this->request->data->date_choose);     
             $this->Commande->insert($tab4);
             $this->Session->setFlash("<h6>Order saved <b></b></h6>","success");
+            $this->renderNotif("Order saved ", "success", "/client/pu_order", "dashboard_client");
         }
         $this->render('client_order','dashboard_client');
     }

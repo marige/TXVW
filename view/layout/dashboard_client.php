@@ -275,7 +275,7 @@
     $(document).on('ready', function () {
       // initialization of custom select
       $('.js-select').selectpicker();
-
+      
       // initialization of sidebar navigation component
       $.HSCore.components.HSSideNav.init('.js-side-nav', {
         afterOpen: function() {
