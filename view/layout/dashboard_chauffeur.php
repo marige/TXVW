@@ -40,12 +40,12 @@
 
   <!-- CSS Customization -->
   <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/custom.css">
-  <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/timeline.css">
+  <link rel="stylesheet" href="<?php echo  BASE_URL_THEME; ?>assets/css/timeline1.css">
 </head>
 <body>
     <!-- Header -->
     <header id="js-header" class="u-header u-header--sticky-top">
-        <div class="u-header__section u-header__section--light g-bg-white u-shadow-v32 g-min-height-65">
+        <div class="u-header__section u-header__section--admin-light g-min-height-65">
             <nav class="navbar no-gutters g-pa-0">
                 <div class="col-auto d-flex flex-nowrap u-header-logo-toggler g-py-12">
                     <!-- Logo -->
@@ -193,16 +193,7 @@
                                 </a>
                             </li>
                             <!-- End Icons -->
-                             <!-- Icons --> 
-                            <li class="u-sidebar-navigation-v1-menu-item u-side-nav--second-level-menu-item">
-                                <a class="media u-side-nav--second-level-menu-link g-px-15 g-py-12" href="/client/">
-                                    <span class="d-flex align-self-center g-mr-15 g-mt-minus-1">
-                                        <i class="hs-admin-wand"></i>
-                                    </span>
-                                    <span class="media-body align-self-center">Liste of favorits</span>
-                                </a>
-                            </li>
-                            <!-- End Icons -->
+                           
                         </ul>
                         <!-- End UI Components: Submenu -->
                     </li>
@@ -312,6 +303,8 @@
   <script src="<?php echo  BASE_URL_THEME; ?>assets/js/helpers/hs.focus-state.js"></script>
   <script src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.popup.js"></script>
 <script src="<?php echo  BASE_URL_THEME; ?>assets/js/components/hs.file-attachement.js"></script>
+<script src="<?php echo  BASE_URL_THEME; ?>/assets/js/helpers/hs.file-attachments.js"></script>
+  
   <!-- JS Custom -->
   <script src="<?php echo  BASE_URL_THEME; ?>assets/js/custom.js"></script>
   
@@ -345,12 +338,10 @@
       // initialization of custom scrollbar
       $.HSCore.components.HSScrollBar.init($('.js-custom-scroll'));
       
-       // initialization of forms
+         // initialization of forms
+      $.HSCore.helpers.HSFileAttachments.init();
       $.HSCore.components.HSFileAttachment.init('.js-file-attachment');
-      
-      
-
-     
+      $.HSCore.helpers.HSFocusState.init();
     });
   </script>
   

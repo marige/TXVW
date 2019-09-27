@@ -26,7 +26,7 @@
 /* стили для элементов таймлайна */
 .timeline-item {
   position: relative;
-  background-color: #118c4e;
+  background-color: #FBF8EF;
   color: #fff;
   padding: .825rem;
   border-radius: .25rem;
@@ -37,7 +37,7 @@
   position: absolute;
   width: .75rem;
   height: .75rem;
-  background-color: #118c4e;
+  background-color: rgba(255,255,255,1);
   border-radius: .4rem;
   left: -2.3125rem;
   top: 50%;
@@ -67,7 +67,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  background-color: rgba(255,255,255,.4);
+  background-color: #FBF8EF;
   padding: .3rem;
   font-size: .875rem;
   border-top-right-radius: .25rem;
