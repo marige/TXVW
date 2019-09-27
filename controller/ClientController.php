@@ -163,8 +163,9 @@ class ClientController extends Controller {
     }
 
     
-    public function commande_state(){
+    public function pu_commande_state(){
         
+         $this->render('timeline','dashboard_client');
     }
 
     public function pu_message(){       
@@ -520,12 +521,8 @@ class ClientController extends Controller {
          echo $this->Client->getMailValide($email);
         return 0;
     }
-     public function pu_comment_xa_marche(){
-         $this->render("comment_xa_marche", "home_editor");
-    }
-      public function pu_siteizigroup(){
-         $this->render("siteizigroupe", "home_editor");
-    }
+   
+     
             
 }
 
