@@ -15,7 +15,7 @@
                       <a class="u-badge-v2--lg u-badge--bottom-right g-width-32 g-height-32 g-bg-secondary g-bg-primary--hover g-transition-0_3 g-mb-20 g-mr-20" href="#">
                         <i class="hs-admin-pencil g-absolute-centered g-font-size-16 g-color-white"></i>
                       </a>
-                      <img class="img-fluid rounded-circle" src="../assets/img-temp/130x130/img1.jpg" alt="Image description">
+                      <img class="img-fluid rounded-circle" src="<?php echo  BASE_URL_THEME; ?>assets/img-temp/130x130/img1.jpg" alt="Image description">
                     </div>
 
                     <h3 class="g-font-weight-300 g-font-size-20 g-color-black mb-0">Charlie Bailey</h3>
@@ -25,12 +25,11 @@
                   <!-- Profile Completion -->
                   <section class="g-mb-30 g-mb-50--md">
                     <h4 class="media h6 g-font-weight-400 g-mb-15">
-			<span class="d-flex align-self-center g-color-gray-dark-v6">Profile Completion</span>
-			<span class="media-body align-self-center text-right g-color-gray-dark-v6">75%</span>
+			<span class="d-flex align-self-center g-color-gray-dark-v6">Upload picture</span>
 		</h4>
 
                     <div class="progress g-height-4 g-rounded-2">
-                      <div class="progress-bar g-bg-lightblue-v3 g-rounded-3" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                     <!-- upload input -->
                     </div>
                   </section>
                   <!-- End Profile Completion -->
@@ -456,9 +455,9 @@
                               <i class="hs-admin-check g-absolute-centered g-font-size-default g-color-secondary"></i>
                             </span>
                               <select name="language" class="js-select u-select--v2-select" required="required" style="display: none;">
-                                <option data-content='<span class="d-flex align-items-center"><img class="g-width-20 g-height-20 rounded-circle g-mr-8" src="../assets/img/langs/us.png" alt="Image Description"><span class="g-line-height-1 g-color-black">English</span></span>'>English</option>
-                                <option data-content='<span class="d-flex align-items-center"><img class="g-width-20 g-height-20 rounded-circle g-mr-8" src="../assets/img/langs/de.png" alt="Image Description"><span class="g-line-height-1 g-color-black">Deutsche</span></span>'>Deutsche</option>
-                                <option data-content='<span class="d-flex align-items-center"><img class="g-width-20 g-height-20 rounded-circle g-mr-8" src="../assets/img/langs/ru.png" alt="Image Description"><span class="g-line-height-1 g-color-black">Русский</span></span>'>Русский</option>
+                                <option data-content='<span class="d-flex align-items-center"><img class="g-width-20 g-height-20 rounded-circle g-mr-8" src="<?php echo  BASE_URL_THEME; ?>assets/img/langs/us.png" alt="Image Description"><span class="g-line-height-1 g-color-black">English</span></span>'>English</option>
+                                <option data-content='<span class="d-flex align-items-center"><img class="g-width-20 g-height-20 rounded-circle g-mr-8" src="<?php echo  BASE_URL_THEME; ?>assets/img/langs/de.png" alt="Image Description"><span class="g-line-height-1 g-color-black">Deutsche</span></span>'>Deutsche</option>
+                                <option data-content='<span class="d-flex align-items-center"><img class="g-width-20 g-height-20 rounded-circle g-mr-8" src="<?php echo  BASE_URL_THEME; ?>assets/img/langs/ru.png" alt="Image Description"><span class="g-line-height-1 g-color-black">Русский</span></span>'>Русский</option>
                               </select>
                               <i class="hs-admin-angle-down g-absolute-centered--y g-right-0 g-color-gray-light-v6 ml-auto g-mr-15"></i>
                             </div>
@@ -568,4 +567,20 @@
                 </div>
               </div>
             </div>
+     <div class="col-md-9">
+                <div class="g-pos-rel h-100 g-brd-around g-brd-gray-light-v7 g-rounded-4 g-pa-15 g-pa-30--md">
+                  <header>
+                    <h2 class="text-uppercase g-font-size-12 g-font-size-default--md g-color-black mb-0">Photos &amp; Videos</h2>
+                  </header>
+
+                  <hr class="d-flex g-brd-gray-light-v7 g-my-15 g-my-25--md">
+
+                  <form>
+                    <div class="form-group">
+                      <input class="js-file-attachment" type="file" name="fileAttachment[]">
+                    </div>
+                  </form>
+                </div>
           </div>
+     
+     
