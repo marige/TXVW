@@ -45,7 +45,7 @@
 <body>
     <!-- Header -->
     <header id="js-header" class="u-header u-header--sticky-top">
-        <div class="u-header__section u-header__section--admin-light g-min-height-65">
+        <div class="u-header__section u-header__section--admin-light g-min-height-65 u-shadow-v24">
             <nav class="navbar no-gutters g-pa-0">
                 <div class="col-auto d-flex flex-nowrap u-header-logo-toggler g-py-12">
                     <!-- Logo -->
@@ -154,7 +154,7 @@
     <main class="container-fluid px-0 g-pt-65">
         <div class="row no-gutters g-pos-rel g-overflow-x-hidden">
             <!-- Sidebar Nav -->
-            <div id="sideNav" class="col-auto u-sidebar-navigation-v1 u-sidebar-navigation-v1-menu u-shadow-v32">
+            <div id="sideNav" class="col-auto u-sidebar-navigation-v1 u-sidebar-navigation--light u-sidebar-navigation-v1-menu u-shadow-v32">
                 <ul id="sideNavMenu" class="u-sidebar-navigation-v1-menu u-side-nav--top-level-menu g-min-height-100vh mb-0">
                     
                  
